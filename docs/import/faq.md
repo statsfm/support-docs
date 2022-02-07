@@ -6,7 +6,7 @@ description: Frequently asked questions about importing your Spotify data
 
 # Import FAQ
 
-## There are no `endsong.json` files present in the files I recived
+## There are no `endsong.json` files present in the files I recieved
 
 Spotify has unfortunately sent you the wrong files. Spotify has two types of file packages: a package with just some basic info which only covers one year (this package arrives around 3 days after requesting), and a package that includes over 60 files with detailed info and which has data from the minute you've signed up for Spotify (this package arrives about 2-3 weeks after requesting).
 
