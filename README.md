@@ -1,4 +1,4 @@
-# Stats.fm Support Documentation
+# Spotistats Support Documentation
 
 ### Installation
 

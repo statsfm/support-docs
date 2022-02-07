@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Stats.fm Support',
-  tagline: 'Stats.fm Support Centre',
+  title: 'Spotistats Support',
+  tagline: 'Spotistats Support Centre',
   url: 'https://support.stats.fm',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -29,7 +29,7 @@ const config = {
           showReadingTime: true,
           remarkPlugins: [],
           blogDescription:
-            'Stay up to date with the latest news and updates from Stats.fm',
+            'Stay up to date with the latest news and updates from Spotistats',
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -60,9 +60,9 @@ const config = {
         },
       ],
       navbar: {
-        title: 'Stats.fm Support',
+        title: 'Spotistats Support',
         logo: {
-          alt: 'Stats.fm Support',
+          alt: 'Spotistats Support',
           src: 'img/logo.svg',
           width: 22,
         },
@@ -82,7 +82,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://stats.fm',
+            href: 'https://spotistats.app',
             className: 'navbar-item-website',
             position: 'right',
           },
