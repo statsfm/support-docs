@@ -8,6 +8,7 @@ description: Explanation about why we are rebranding to Stats.fm
 :::info
 
 After multiple internal discussions with the team, we were not satisfied with the name **Backtrack**. We made the decision to rebrand to **Stats.fm**.
+
 :::
 
 So in short: Spotistats for Spotify will soon be renamed to Stats.fm for Spotify.
