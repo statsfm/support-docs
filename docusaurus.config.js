@@ -87,7 +87,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://discord.gg/statsfm',
+            href: '/discord',
             className: 'navbar-item-discord',
             position: 'right',
           },

@@ -6,7 +6,7 @@ description: Generic frequently asked questions
 
 # Frequently Asked Questions
 
-> Do you have a question that isn't answered here? Feel free to ask it in [our Discord server](https://discord.gg/statsfm), or send an email to [support@stats.fm](mailto:support@stats.fm).
+> Do you have a question that isn't answered here? Feel free to ask it in [our Discord server](/discord), or send an email to [support@stats.fm](mailto:support@stats.fm).
 
 ## What is Stats.fm?
 
@@ -14,7 +14,7 @@ Stats.fm is an app that allows you to have exciting insights in your Spotify top
 
 ## I've found a bug, where can I report this? {#bugs}
 
-Please contact me at [sjoerd@stats.fm](mailto:sjoerd@stats.fm) or post it in [our Discord server](https://discord.gg/statsfm) in the #bug-reports channel.
+Please contact me at [sjoerd@stats.fm](mailto:sjoerd@stats.fm) or post it in [our Discord server](/discord) in the #bug-reports channel.
 
 ## I want to help translate Stats.fm {#translating}
 
