@@ -18,7 +18,9 @@ In order to request the `endsong.json` files you need to import your streaming h
 > Best regards, <br /> `your name`
 
 :::tip
+
 **Sending this email from your Spotify account's email address**, makes this process a lot easier and quicker. Otherwise they may ask for another way to identify yourself (naming a song you've recently added to your library may suffice already).
+
 :::
 
 ## 2. Confirm your request
@@ -46,7 +48,9 @@ It turns out, users generally receive the data within a week. That's still quite
 Once your data is ready to download, you'll get an email with a link to download a .ZIP file. You need to extract this file before proceeding. You can learn how to extract .ZIP files [here](https://www.youtube.com/watch?v=do3u3tXAbWQ).
 
 :::warning
+
 **Never share your files with others!** The data may contain a lot of personal information, depending on what Spotify has sent you.
+
 :::
 
 ![Step 5 image](./step-5.png)
@@ -70,7 +74,9 @@ After clicking _Upload_, your files will be sent to the Spotistats servers.
 Once your streams have reached the Spotistats servers, they need to be processed. Duplicate streams will be filtered out, and there will be a lot of calculations made for each stream in order to save it securely in the database. This can take a while. Depending on the amount of streams and the amount of people importing their streams at once this can take just a few seconds up to a couple of hours.
 
 :::tip
+
 If you don't like staring at a webpage for a long time, you can close the tab while your streams are being processed.
+
 :::
 
 ![Step 9 image](./step-9.png)
