@@ -1,0 +1,60 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  list-style: none;
+}
+
+.article {
+  border-radius: var(--ifm-pagination-nav-border-radius);
+  padding: 15px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: border-color var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+}
+
+.author {
+  display: flex;
+  gap: 4;
+  align-items: center;
+}
+
+.authorName {
+  margin: 0;
+}
+
+.avatar {
+  border-radius: 1000px;
+  width: 32px;
+}
+
+.lineClamp4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
