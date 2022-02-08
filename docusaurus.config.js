@@ -87,7 +87,7 @@ const config = {
             position: 'right',
           },
           {
-            href: '/discord',
+            href: 'https://discord.gg/aV9EtB3',
             className: 'navbar-item-discord',
             position: 'right',
           },
