@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const isPreview = process.env.DEPLOY_CONTEXT === 'preview';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Spotistats Support',
@@ -15,7 +17,7 @@ const config = {
   favicon: 'img/favicon.ico',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'nl-NL'],
+    locales: isPreview ? ['en'] : ['en', 'nl-NL'],
   },
 
   presets: [
@@ -80,6 +82,12 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'right',
+            dropdownItemsAfter: [
+              {
+                href: 'https://translate.spotistats.app',
+                label: 'Help Us Translate',
+              },
+            ],
           },
           {
             href: 'https://spotistats.app',
