@@ -92,8 +92,8 @@ html[data-theme='dark'] .navbar-item-website:before {
 }
 
 img[src*='#smaller-step3'] {
-  height: 457px;
-  width: 211px;
+  height: 339px;
+  width: 187.5px;
   display: flex;
 }
 

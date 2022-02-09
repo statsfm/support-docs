@@ -17,7 +17,7 @@ In order to request the `endsong.json` files you need to import your streaming h
 >
 > Best regards, <br /> `your name`
 
-:::tip
+:::tip Tip
 
 **Sending this email from your Spotify account's email address**, makes this process a lot easier and quicker. Otherwise they may ask for another way to identify yourself (naming a song you've recently added to your library may suffice already).
 
@@ -47,7 +47,7 @@ It turns out, users generally receive the data within a week. That's still quite
 
 Once your data is ready to download, you'll get an email with a link to download a .ZIP file. You need to extract this file before proceeding. You can learn how to extract .ZIP files [here](https://www.youtube.com/watch?v=do3u3tXAbWQ).
 
-:::warning
+:::warning Warning
 
 **Never share your files with others!** The data may contain a lot of personal information, depending on what Spotify has sent you.
 
@@ -63,9 +63,11 @@ To link your files to your account, you'll need to fill in a temporary import co
 
 ## 7. Upload your files
 
-When you have your extracted .JSON files ready, click the _Choose files_ button. Then, select the `endsong.json` files. You can hold shift and select files to upload multiple at a time, but you can also upload them one by one.
+You can only upload one `endsong.json` file at a time.
 
-After clicking _Upload_, your files will be sent to the Spotistats servers.
+When you have your extracted .JSON files ready, click the _Upload_ button. Then, select the `endsong.json` files. You have to upload files one by one.
+
+After clicking _Upload_, your file will be sent to the Spotistats servers.
 
 ![Step 8 image](./step-8.png)
 
@@ -73,7 +75,7 @@ After clicking _Upload_, your files will be sent to the Spotistats servers.
 
 Once your streams have reached the Spotistats servers, they need to be processed. Duplicate streams will be filtered out, and there will be a lot of calculations made for each stream in order to save it securely in the database. This can take a while. Depending on the amount of streams and the amount of people importing their streams at once this can take just a few seconds up to a couple of hours.
 
-:::tip
+:::tip Tip
 
 If you don't like staring at a webpage for a long time, you can close the tab while your streams are being processed.
 
