@@ -63,7 +63,11 @@ To link your files to your account, you'll need to fill in a temporary import co
 
 ## 7. Upload your files
 
+:::warning Warning
+
 You can only upload one `endsong.json` file at a time.
+
+:::
 
 When you have your extracted .JSON files ready, click the _Upload_ button. Then, select the `endsong.json` files. You have to upload files one by one.
 
