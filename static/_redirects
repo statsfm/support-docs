@@ -3,12 +3,12 @@
 /statsfm* /docs/statsfm
 /changelog/1.2.5* /blog/changelog-1.2.5
 /faq* /docs/faq
-/i-purchased-plus-but-it-doesnt-show* /docs/spotistats-plus/faq#i-bought-plus-but-there-are-no-changes-to-the-app
+/i-purchased-plus-but-it-doesnt-show* /docs/spotistats-plus/bought-plus-but-no-changes
 /import/guide* /docs/import/streaming-history
 /import* /docs/import
 /machine-learning-vs-count* /docs/import/faq/calculation-methods
 /permissions* /docs/permissions
 /streams/sync* /docs/streams/sync
 /streams* /docs/streams/sync
-/transfer-my-plus-purchase* /docs/spotistats-plus/faq#can-i-transfer-my-plus-purchase-to-another-account
+/transfer-my-plus-purchase* /docs/spotistats-plus/transfer-plus
 /404.html* /404
