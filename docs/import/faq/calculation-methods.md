@@ -8,7 +8,7 @@ You may have noticed that there are more ways to sort your top tracks, artists a
 
 ### Machine learning
 
-This is currently the default option. Items are provided and sorted by [Spotify's Web API](https://developer.spotify.com/documentation/web-api/reference/#category-personalization). Spotify uses their enourmous database and fancy machine learning models to calculate the list. This may sound cool, but has proven to be quite inaccurate. Nothing has been confirmed, but the order is probably based on these factors: total play time, skipping rate, at which time you've listened and whether the item has ever occured in your lists before. This means that some items may not be included in the list, even though you've streamed them more than other items that do appear in the list. This is also how all other Spotify statistics services sort your top tracks, artists and albums (inaccurately :P).
+This is currently the default option. Items are provided and sorted by [Spotify's Web API](https://developer.spotify.com/documentation/web-api/reference/#category-personalization). Spotify uses their enourmous database and fancy machine learning models to calculate the list. This may sound cool, but has proven to be quite inaccurate. Nothing has been confirmed, but the order is probably based on these factors: total play time, skipping rate, at which time you've listened and whether the item has ever occurred in your lists before. This means that some items may not be included in the list, even though you've streamed them more than other items that do appear in the list. This is also how all other Spotify statistics services sort your top tracks, artists and albums (inaccurately :P).
 
 #### Advantages
 
