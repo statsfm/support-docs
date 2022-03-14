@@ -1,0 +1,16 @@
+name: Bi-weekly redeploy
+
+on:
+  schedule:
+    - cron: '0 0 * * 1,4' # At 00:00 on Monday and Thursday.
+
+jobs:
+  trigger-build:
+    name: Trigger Site Rebuild
+    runs-on: ubuntu-latest
+    env:
+      PAGES_DEPLOY_HOOK: ${{ secrets.PAGES_DEPLOY_HOOK }}
+    steps:
+      - name: cURL request
+        # Hit the webhook endpoint to rebuild  from the "main" branch
+        run: curl -X POST "$PAGES_DEPLOY_HOOK"
