@@ -19,7 +19,7 @@ From the moment you've imported your first file, the systems will automatically 
 
 ## Why does the app show a different number of streams than the endsong.json files?
 
-You may notice that the total amount of streams in your data files doesn't match the number shown on the stats page in the app. This happens because Spotistats filters out a couple of types of streams:
+You may notice that the total amount of streams in your data files doesn't match the number shown on the stats page in the app. This happens because Stats.fm filters out a couple of types of streams:
 
 - Skipped tracks\* (since they make your stats inaccurate)
 - Streams shorter than 30 seconds\* (since they make your stats inaccurate)

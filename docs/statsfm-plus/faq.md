@@ -1,20 +1,20 @@
 ---
 title: Plus FAQ
 tags: [faq, plus]
-description: Frequently asked questions about Spotistats Plus
+description: Frequently asked questions about Stats.fm Plus
 ---
 
-# Spotistats Plus FAQ
+# Stats.fm Plus FAQ
 
-## Is Spotistats Plus the same as Spotify Premium?
+## Is Stats.fm Plus the same as Spotify Premium?
 
-No, **Spotistats Plus** will unlock only certain functions within the **Spotistats app** and is not linked to **Spotify Premium** or your Spotify account.
+No, **Stats.fm Plus** will unlock only certain functions within the **Stats.fm app** and is not linked to **Spotify Premium** or your Spotify account.
 
-## Is Spotistats Plus a subscription?
+## Is Stats.fm Plus a subscription?
 
-Nope, Spotistats Plus is a one time purchase.
+Nope, Stats.fm Plus is a one time purchase.
 
-## I bought Spotistats Plus and want to use more advanced features, what do I need to do?
+## I bought Stats.fm Plus and want to use more advanced features, what do I need to do?
 
 Follow this [guide](../import/streaming-history) to import your streaming history.
 
