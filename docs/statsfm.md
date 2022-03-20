@@ -15,7 +15,7 @@ So in short: Spotistats for Spotify will soon be renamed to Stats.fm for Spotify
 
 ## Why?
 
-The name Spotistats is against the [Spotify Developer Policy](https://developer.spotify.com/policy/#vi-naming-and-branding). Aside from that, it is time to take a step towards other streaming services like Apple Music. The name Stats.fm would not fit that well.
+The name Spotistats is against the [Spotify Developer Policy](https://developer.spotify.com/policy/#vi-naming-and-branding). Aside from that, it is time to take a step towards other streaming services like Apple Music. The name Spotistats would not fit that well.
 
 ## Why Stats.fm?
 
