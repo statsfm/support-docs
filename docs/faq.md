@@ -8,19 +8,19 @@ description: Generic frequently asked questions
 
 > Do you have a question that isn't answered here? Feel free to ask it in [our Discord server](https://discord.gg/aV9EtB3), or send an email to [support@stats.fm](mailto:support@stats.fm).
 
-## What is Spotistats?
+## What is Stats.fm?
 
-Spotistats is an app that allows you to have exciting insights in your Spotify top tracks, artists, genres and a lot more! You can read more about it and download the app via [our website](https://stats.fm/).
+Stats.fm is an app that allows you to have exciting insights in your Spotify top tracks, artists, genres and a lot more! You can read more about it and download the app via [our website](https://stats.fm/).
 
 ## I've found a bug, where can I report this? {#bugs}
 
 Please contact me at [sjoerd@stats.fm](mailto:sjoerd@stats.fm) or post it in [our Discord server](https://discord.gg/aV9EtB3) in the #bug-reports channel.
 
-## I want to help translate Spotistats {#translating}
+## I want to help translate Stats.fm {#translating}
 
 We appreciate your help! You can contribute to our translations on [our Crowdin project](https://translate.spotistats.app/).
 
 ## More FAQs
 
-- [Spotistats Plus FAQ](./spotistats-plus/faq)
+- [Stats.fm Plus FAQ](./statsfm-plus/faq)
 - [Import FAQ](./import/faq)
