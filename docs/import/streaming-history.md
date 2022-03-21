@@ -6,6 +6,12 @@ description: How to import your Spotify streaming history
 
 # Import Guide
 
+:::caution Caution
+
+We are working on rewriting this guide, portions of this guide may still contain old information. If you have questions, please join our [Discord server](https://discord.gg/aV9EtB3) or mail us at [support@stats.fm](mailto:support@stats.fm).
+
+:::
+
 ## 1. Request your data from Spotify
 
 In order to request the `endsong.json` files you need to import your streaming history, you'll need to send a simple email to `support@spotify.com`. You can use the template below if you like.
