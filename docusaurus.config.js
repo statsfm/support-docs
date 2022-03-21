@@ -8,8 +8,8 @@ const isPreview = process.env.DEPLOY_CONTEXT === 'preview';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Spotistats Support',
-  tagline: 'Spotistats Support Centre',
+  title: 'Stats.fm Support',
+  tagline: 'Stats.fm Support Centre',
   url: 'https://support.stats.fm',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -33,11 +33,10 @@ const config = {
           showReadingTime: true,
           remarkPlugins: [],
           blogDescription:
-            'Stay up to date with the latest news and updates from Spotistats',
+            'Stay up to date with the latest news and updates from Stats.fm',
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateTime: true,
           remarkPlugins: [],
         },
         theme: {
@@ -64,9 +63,9 @@ const config = {
         },
       ],
       navbar: {
-        title: 'Spotistats Support',
+        title: 'Stats.fm Support',
         logo: {
-          alt: 'Spotistats Support',
+          alt: 'Stats.fm Support',
           src: 'img/logo.svg',
           width: 22,
         },
@@ -92,7 +91,7 @@ const config = {
             ],
           },
           {
-            href: 'https://spotistats.app',
+            href: 'https://stats.fm',
             className: 'navbar-item-website',
             position: 'right',
           },
