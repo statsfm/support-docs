@@ -61,12 +61,6 @@ Once your data is ready to download, you'll get an email with a link to download
 
 ![Step 5 image](./step-5.png)
 
-## 6. Get your import code
-
-To link your files to your account, you'll need to fill in a temporary import code. You can find your unique import code in the Spotistats app on the _Manage imports_ page, found in _Settings_. Then copy and paste or type the code into the [import website](https://spotistats.app/import/).
-
-![Step 6 image](./step-6.png)
-
 ## 7. Upload your files
 
 :::warning Warning
@@ -75,9 +69,9 @@ You can only upload one `endsong.json` file at a time.
 
 :::
 
-When you have your extracted .JSON files ready, click the _Upload_ button. Then, select the `endsong.json` files. You have to upload files one by one.
+When you have your extracted .JSON files ready, go to [stats.fm/import](https://stats.fm/import), login and click the _Import a new file_ button. Then, select your first `endsong.json` file. You have to upload files one by one.
 
-After clicking _Upload_, your file will be sent to the Spotistats servers.
+After clicking selecting the file, your file will be sent to the Spotistats servers to be processed. This can take a few minutes. Meanwhile you can already upload your next file.
 
 ![Step 8 image](./step-8.png)
 
