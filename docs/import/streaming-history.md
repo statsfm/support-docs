@@ -37,9 +37,7 @@ As soon as your request is accepted by Spotify, you'll receive a link to confirm
 
 ## 3. Turn on _Sync streaming history_ to prevent a gap in your data
 
-The files you receive from Spotify miss the last 2-5 days of data. For example: if you've requested the data on June 1st and you've received the data on June 14th, the data will include streams until about June 12th. You can turn on the setting _Sync streaming history_ after you've requested your files to make sure you don't miss any data. You can do so in _Settings_ > _Manage imports_ > _Sync streaming history_. Make sure to set this to _Enabled_. You can read more about streaming history synchronisation [here](../streams/sync).
-
-![Step 3 image](./step-3.png#smaller-step3)
+The files you receive from Spotify miss the last 2-5 days of data. For example: if you've requested the data on June 1st and you've received the data on June 14th, the data will include streams until about June 12th. You can turn on the setting _Sync streaming history_ after you've requested your files to make sure you don't miss any data. You can do so in _Settings_ > _Algorithms, import & stream sync_ > _Sync streaming history_. Make sure to set this to _Enabled_. You can read more about streaming history synchronisation [here](../streams/sync).
 
 ## 4. Wait until you receive your data
 
@@ -61,7 +59,7 @@ Once your data is ready to download, you'll get an email with a link to download
 
 ![Step 5 image](./step-5.png)
 
-## 7. Upload your files
+## 6. Upload your files
 
 :::warning Warning
 
@@ -73,9 +71,9 @@ When you have your extracted .JSON files ready, go to [stats.fm/import](https://
 
 After clicking selecting the file, your file will be sent to the Spotistats servers to be processed. This can take a few minutes. Meanwhile you can already upload your next file.
 
-![Step 8 image](./step-8.png)
+![Step 6 image](./step-6.png)
 
-## 8. Wait for your streams to be processed
+## 7. Wait for your streams to be processed
 
 Once your streams have reached the Spotistats servers, they need to be processed. Duplicate streams will be filtered out, and there will be a lot of calculations made for each stream in order to save it securely in the database. This can take a while. Depending on the amount of streams and the amount of people importing their streams at once this can take just a few seconds up to a couple of hours.
 
@@ -85,8 +83,6 @@ If you don't like staring at a webpage for a long time, you can close the tab wh
 
 :::
 
-![Step 9 image](./step-9.png)
-
-## 9. Ready to go!
+## 8. Ready to go!
 
 Congratulations! You can now view your full listening history, play count, and much more. Your future streams will be synced to the database automatically.
