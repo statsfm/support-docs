@@ -6,6 +6,8 @@ description: How to import your Spotify streaming history
 
 # Import Guide
 
+import DataRequestGenerator from '@site/src/components/DataRequestGenerator';
+
 :::caution Caution
 
 We are working on rewriting this guide, portions of this guide may still contain old information. If you have questions, please join our [Discord server](https://discord.gg/aV9EtB3) or mail us at [support@stats.fm](mailto:support@stats.fm).
@@ -22,6 +24,8 @@ In order to request the `endsong.json` files you need to import your streaming h
 > And just to be sure: I don't want the data I can request myself with the button on my account page, I'm looking for the "endsong.json" files.
 >
 > Best regards, <br /> `your name`
+
+<DataRequestGenerator />
 
 :::tip Tip
 
