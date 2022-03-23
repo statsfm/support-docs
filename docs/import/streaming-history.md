@@ -6,28 +6,19 @@ description: How to import your Spotify streaming history
 
 # Import Guide
 
-:::caution Caution
-
-We are working on rewriting this guide, portions of this guide may still contain old information. If you have questions, please join our [Discord server](https://discord.gg/aV9EtB3) or mail us at [support@stats.fm](mailto:support@stats.fm).
-
-:::
+import DataRequestGenerator from '@site/src/components/DataRequestGenerator';
 
 ## 1. Request your data from Spotify
-
-In order to request the `endsong.json` files you need to import your streaming history, you'll need to send a simple email to `support@spotify.com`. You can use the template below if you like.
-
-> Hi,
->
-> I would like to receive a copy of my extended lifetime streaming history in technical endsong.json format. The data requested from the privacy tab on the spotify.com/account page only includes the data of last year, and I want my lifetime data (so the endsong.json files). A link to my Spotify profile is `link to your Spotify profile` and my username is `your username`. A song I've recently added to my library is "`name of a song youve recently added to your library`" by `name of the artist`.
-> And just to be sure: I don't want the data I can request myself with the button on my account page, I'm looking for the "endsong.json" files.
->
-> Best regards, <br /> `your name`
 
 :::tip Tip
 
 **Sending this email from your Spotify account's email address**, makes this process a lot easier and quicker. Otherwise they may ask for another way to identify yourself (naming a song you've recently added to your library may suffice already).
 
 :::
+
+In order to request the `endsong.json` files you need to import your streaming history, you'll need to send a simple email to [support@spotify.com](mailto:support@spotify.com). You can use the generator below to generate the email text.
+
+<DataRequestGenerator />
 
 ## 2. Confirm your request
 
@@ -37,9 +28,7 @@ As soon as your request is accepted by Spotify, you'll receive a link to confirm
 
 ## 3. Turn on _Sync streaming history_ to prevent a gap in your data
 
-The files you receive from Spotify miss the last 2-5 days of data. For example: if you've requested the data on June 1st and you've received the data on June 14th, the data will include streams until about June 12th. You can turn on the setting _Sync streaming history_ after you've requested your files to make sure you don't miss any data. You can do so in _Settings_ > _Manage imports_ > _Sync streaming history_. Make sure to set this to _Enabled_. You can read more about streaming history synchronisation [here](../streams/sync).
-
-![Step 3 image](./step-3.png#smaller-step3)
+The files you receive from Spotify miss the last 2-5 days of data. For example: if you've requested the data on June 1st and you've received the data on June 14th, the data will include streams until about June 12th. You can turn on the setting _Sync streaming history_ after you've requested your files to make sure you don't miss any data. You can do so in _Settings_ > _Algorithms, import & stream sync_ > _Sync streaming history_. Make sure to set this to _Enabled_. You can read more about streaming history synchronisation [here](../streams/sync).
 
 ## 4. Wait until you receive your data
 
@@ -61,7 +50,7 @@ Once your data is ready to download, you'll get an email with a link to download
 
 ![Step 5 image](./step-5.png)
 
-## 7. Upload your files
+## 6. Upload your files
 
 :::warning Warning
 
@@ -73,9 +62,9 @@ When you have your extracted .JSON files ready, go to [stats.fm/import](https://
 
 After clicking selecting the file, your file will be sent to the Spotistats servers to be processed. This can take a few minutes. Meanwhile you can already upload your next file.
 
-![Step 8 image](./step-8.png)
+![Step 6 image](./step-6.png)
 
-## 8. Wait for your streams to be processed
+## 7. Wait for your streams to be processed
 
 Once your streams have reached the Spotistats servers, they need to be processed. Duplicate streams will be filtered out, and there will be a lot of calculations made for each stream in order to save it securely in the database. This can take a while. Depending on the amount of streams and the amount of people importing their streams at once this can take just a few seconds up to a couple of hours.
 
@@ -85,8 +74,6 @@ If you don't like staring at a webpage for a long time, you can close the tab wh
 
 :::
 
-![Step 9 image](./step-9.png)
-
-## 9. Ready to go!
+## 8. Ready to go!
 
 Congratulations! You can now view your full listening history, play count, and much more. Your future streams will be synced to the database automatically.
