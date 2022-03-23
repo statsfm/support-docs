@@ -8,30 +8,17 @@ description: How to import your Spotify streaming history
 
 import DataRequestGenerator from '@site/src/components/DataRequestGenerator';
 
-:::caution Caution
-
-We are working on rewriting this guide, portions of this guide may still contain old information. If you have questions, please join our [Discord server](https://discord.gg/aV9EtB3) or mail us at [support@stats.fm](mailto:support@stats.fm).
-
-:::
-
 ## 1. Request your data from Spotify
-
-In order to request the `endsong.json` files you need to import your streaming history, you'll need to send a simple email to `support@spotify.com`. You can use the template below if you like.
-
-> Hi,
->
-> I would like to receive a copy of my extended lifetime streaming history in technical endsong.json format. The data requested from the privacy tab on the spotify.com/account page only includes the data of last year, and I want my lifetime data (so the endsong.json files). A link to my Spotify profile is `link to your Spotify profile` and my username is `your username`. A song I've recently added to my library is "`name of a song youve recently added to your library`" by `name of the artist`.
-> And just to be sure: I don't want the data I can request myself with the button on my account page, I'm looking for the "endsong.json" files.
->
-> Best regards, <br /> `your name`
-
-<DataRequestGenerator />
 
 :::tip Tip
 
 **Sending this email from your Spotify account's email address**, makes this process a lot easier and quicker. Otherwise they may ask for another way to identify yourself (naming a song you've recently added to your library may suffice already).
 
 :::
+
+In order to request the `endsong.json` files you need to import your streaming history, you'll need to send a simple email to [support@spotify.com](mailto:support@spotify.com). You can use the generator below to generate the email text.
+
+<DataRequestGenerator />
 
 ## 2. Confirm your request
 

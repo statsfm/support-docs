@@ -123,7 +123,6 @@ const config = {
         highlightSearchTermsOnTargetPage: false,
       },
     ],
-    'docusaurus-plugin-sass',
   ],
 };
 
