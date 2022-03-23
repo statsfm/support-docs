@@ -1,4 +1,3 @@
-import Translate from '@docusaurus/Translate';
 import React from 'react';
 
 export default function DataRequestInput(props: {
