@@ -27,30 +27,30 @@ export const openInMailApp = (
 
 export const linkToYourSpotifyProfile = (
   <Translate id="datarequestgenerator.outputs.linktospotifyprofile.text">
-    &lt;link to your spotify profile&gt;
+    [link to your spotify profile]
   </Translate>
 );
 
 export const spotifyUsername = (
   <Translate id="datarequestgenerator.outputs.spotifyusername.text">
-    &lt;your Spotify username&gt;
+    [your Spotify username]
   </Translate>
 );
 
 export const nameOftheLastSongSaved = (
   <Translate id="datarequestgenerator.outputs.nameofthelastsongsaved.text">
-    &lt;name of the last song you've saved&gt;
+    [name of the last song you've saved]
   </Translate>
 );
 
 export const artistOfThatSong = (
   <Translate id="datarequestgenerator.outputs.artistofthesong.text">
-    &lt;artist of that song&gt;
+    [artist of that song]
   </Translate>
 );
 
 export const spotifyUsernameFormatted = (
   <Translate id="datarequestgenerator.outputs.spotifyusernameformatted.text">
-    &lt;your name&gt;
+    [your name]
   </Translate>
 );
