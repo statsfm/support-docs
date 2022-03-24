@@ -17,7 +17,9 @@ const config = {
   favicon: 'img/favicon.ico',
   i18n: {
     defaultLocale: 'en',
-    locales: isPreview ? ['en'] : ['en'],
+    locales: isPreview
+      ? ['en']
+      : ['en', 'nl-NL', 'hi-IN', 'de-DE', 'fr-FR', 'pt-BR', 'ru-RU'],
   },
 
   presets: [
