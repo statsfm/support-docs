@@ -6,7 +6,6 @@ description: How to import your Spotify streaming history
 
 # Import Guide
 
-import DataRequestGenerator from '@site/src/components/DataRequestGenerator';
 import FramedGenerator from '@site/src/components/DataRequestGenerator/FramedGenerator';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
@@ -20,9 +19,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 
 In order to request the `endsong.json` files you need to import your streaming history, you'll need to send a simple email to [support@spotify.com](mailto:support@spotify.com). You can use the generator below to generate the email text.
 
-<BrowserOnly>
- <FramedGenerator />
-</BrowserOnly>
+<BrowserOnly>{() => <FramedGenerator />}</BrowserOnly>
 
 ## 2. Confirm your request
 
