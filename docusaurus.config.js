@@ -112,8 +112,7 @@ const config = {
     }),
   plugins: [
     [
-      // require.resolve('@easyops-cn/docusaurus-search-local'),
-      require.resolve('loaders'),
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
         docsDir: 'docs',

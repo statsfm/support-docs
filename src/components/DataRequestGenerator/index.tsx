@@ -1,156 +1,166 @@
-import Translate from '@docusaurus/Translate';
-import React, { useState } from 'react';
-import DataRequestInput from './DataRequestInput';
+import React, { useState, useEffect } from 'react';
+
 import './style.css';
+import {
+  loginWithSpotify,
+  copiedElement,
+  copyElement,
+  openInMailApp,
+  linkToYourSpotifyProfile,
+  spotifyUsername,
+  nameOftheLastSongSaved,
+  artistOfThatSong,
+  spotifyUsernameFormatted,
+} from './translations';
 
 export default function DataRequestGenerator(): JSX.Element {
-  const [name, setName] = useState('');
-  const [profileLink, setProfileLink] = useState('');
-  const [username, setUsername] = useState('');
-  const [recentlyAddedSong, setRecentlyAddedSong] = useState('');
-  const [recentlyAddedSongArtist, setRecentlyAddedSongArtist] = useState('');
-  const [viewOutput, setViewOutput] = useState(false);
+  const [name, setName] = useState('<your name>');
+  const [profileLink, setProfileLink] = useState<string>(undefined);
+  const [username, setUsername] = useState<string>(undefined);
+  const [recentlyAddedSong, setRecentlyAddedSong] = useState<string>(undefined);
+  const [recentlyAddedSongArtist, setRecentlyAddedSongArtist] =
+    useState<string>(undefined);
   const [outputElement, setOutputElement] = useState<HTMLPreElement>(null);
   const [viewCopiedText, setViewCopiedText] = useState(false);
+  const [token, setToken] = useState('');
 
-  const everythingFilledIn = () =>
-    name &&
-    profileLink &&
-    username &&
-    recentlyAddedSong &&
-    recentlyAddedSongArtist
-      ? true
-      : false;
+  const spotifyClientId = '52242e73817e4096ad71500937a1fb58';
+  const spotifyScopes = 'user-read-private user-library-read';
 
-  const copyElement = (
-    <div className="col col--2">
-      <Translate id="datarequestgenerator.output.copiedtext.text">
-        Copied!
-      </Translate>
-    </div>
-  );
+  const spotifyLoginUrl = [
+    'https://accounts.spotify.com/authorize?client_id=',
+    spotifyClientId,
+    '&response_type=token&redirect_uri=',
+    encodeURIComponent(
+      `${window.location.protocol}//${window.location.host.replace(
+        'www.',
+        ''
+      )}/spotify_callback`
+    ),
+    '&scope=',
+    spotifyScopes,
+  ].join('');
 
-  if (viewOutput) {
-    return (
-      <>
-        <pre ref={(preElement) => setOutputElement(preElement)}>
-          Hi,
-          <br />I would like to receive a copy of my extended lifetime streaming
-          history in technical endsong.json format. The data requested from the
-          privacy tab on the spotify.com/account page only includes the data of
-          last year, and I want my lifetime data (so the endsong.json files). A
-          link to my Spotify profile is {profileLink} and my username is{' '}
-          {username}. A song I've recently added to my library is "
-          {recentlyAddedSong}" by {recentlyAddedSongArtist}. And just to be
-          sure: I don't want the data I can request myself with the button on my
-          account page, I'm looking for the "endsong.json" files.
-          <br />
-          Best regards,
-          <br />
-          {name}
-        </pre>
-        <div className="row">
-          <div className="col col--3">
-            <button
-              className="button button--primary"
-              onClick={() => {
-                if (everythingFilledIn()) {
-                  const el = outputElement;
-                  if (el) {
-                    copyTextToClipboard(el.innerText);
-                    setViewCopiedText(true);
-                    setTimeout(() => {
-                      setViewCopiedText(false);
-                    }, 2000);
-                  }
-                }
-              }}
-              disabled={everythingFilledIn() ? false : true}
-            >
-              <Translate id="datarequestgenerator.output.copybutton.text">
-                Copy to clipboard
-              </Translate>
-            </button>
-          </div>
-          {viewCopiedText ? copyElement : null}
-        </div>
-      </>
-    );
+  async function spotifyCallbackMessageHandler(event: MessageEvent) {
+    if (
+      event.origin !==
+      `${window.location.protocol}//${window.location.host.replace('www.', '')}`
+    )
+      return;
+    if (
+      event.data.type === 'spotify_callback' &&
+      event.data.token !== undefined
+    ) {
+      setToken(event.data.token);
+      const me = await fetch('https://api.spotify.com/v1/me', {
+        headers: {
+          Authorization: `Bearer ${event.data.token}`,
+        },
+      })
+        .then((res) => res.json())
+        .catch(() => undefined);
+      const savedTrack = (
+        await fetch('https://api.spotify.com/v1/me/tracks?limit=1', {
+          headers: {
+            Authorization: `Bearer ${event.data.token}`,
+          },
+        })
+          .then((response) => response.json())
+          .catch(() => undefined)
+      )?.items[0]?.track;
+      console.log(me, savedTrack);
+      if (me !== undefined && savedTrack !== undefined) {
+        setName(
+          me.display_name.substring(0, 1).toUpperCase() +
+            me.display_name.substring(1)
+        );
+        setProfileLink(me.external_urls.spotify);
+        setUsername(me.display_name);
+        setRecentlyAddedSong(savedTrack.name);
+        setRecentlyAddedSongArtist(savedTrack.artists[0].name);
+      }
+    }
   }
+
+  useEffect(() => {
+    window.addEventListener('message', spotifyCallbackMessageHandler);
+    return () => {
+      window.removeEventListener('message', spotifyCallbackMessageHandler);
+    };
+  }, []);
 
   return (
     <>
-      <p>
-        <DataRequestInput
-          id="name"
-          translate={
-            <Translate id="datarequestgenerator.inputs.name.label">
-              Name
-            </Translate>
-          }
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
-      </p>
-      <p>
-        <DataRequestInput
-          id="profileLink"
-          translate={
-            <Translate id="datarequestgenerator.inputs.profileLink.label">
-              Profile Link
-            </Translate>
-          }
-          onChange={(e) => setProfileLink(e.target.value)}
-          value={profileLink}
-        />
-      </p>
-      <p>
-        <DataRequestInput
-          id="username"
-          translate={
-            <Translate id="datarequestgenerator.inputs.username.label">
-              Username
-            </Translate>
-          }
-          onChange={(e) => setUsername(e.target.value)}
-          value={username}
-        />
-      </p>
-      <p>
-        <DataRequestInput
-          id="recentlyAddedSong"
-          translate={
-            <Translate id="datarequestgenerator.inputs.recentlyAddedSong.label">
-              Recently added song to your library
-            </Translate>
-          }
-          onChange={(e) => setRecentlyAddedSong(e.target.value)}
-          value={recentlyAddedSong}
-        />
-      </p>
-      <p>
-        <DataRequestInput
-          id="recentlyAddedSongArtist"
-          translate={
-            <Translate id="datarequestgenerator.inputs.recentlyAddedSongArtist.label">
-              Artist of the recently added song
-            </Translate>
-          }
-          onChange={(e) => setRecentlyAddedSongArtist(e.target.value)}
-          value={recentlyAddedSongArtist}
-        />
-      </p>
-      <button
-        className="button button--primary"
-        onClick={() => {
-          if (everythingFilledIn()) {
-            setViewOutput(true);
-          }
-        }}
-        disabled={everythingFilledIn() ? false : true}
-      >
-        Generate
-      </button>
+      <pre ref={(preElement) => setOutputElement(preElement)}>
+        Hi,
+        <br />
+        <br />I would like to receive a copy of my extended lifetime streaming
+        history in technical endsong.json format. The data requested from the
+        privacy tab on the spotify.com/account page only includes the data of
+        last year, and I want my lifetime data (so the endsong.json files).
+        <br />
+        <br />A link to my Spotify profile is{' '}
+        {profileLink ?? linkToYourSpotifyProfile} and my username is{' '}
+        {username ?? spotifyUsername}. A song I've recently added to my library
+        is "{recentlyAddedSong ?? nameOftheLastSongSaved}" by{' '}
+        {recentlyAddedSongArtist ?? artistOfThatSong}.<br />
+        <br />
+        And just to be sure: I don't want the data I can request myself with the
+        button on my account page, I'm looking for the "endsong.json" files.
+        <br />
+        <br />
+        Best regards,
+        <br />
+        {name ?? spotifyUsernameFormatted}
+      </pre>
+      <div className="row">
+        {!token ? (
+          <div className="col">
+            <button
+              className="data-request-button button button--primary"
+              onClick={() => {
+                window.open(
+                  spotifyLoginUrl,
+                  'Login with Spotify',
+                  'width=800,height=600'
+                );
+              }}
+            >
+              {loginWithSpotify}
+            </button>
+          </div>
+        ) : null}
+        <div className="col">
+          <button
+            className="data-request-button copyButton button button--primary"
+            onClick={() => {
+              const el = outputElement;
+              copyTextToClipboard(el.innerText);
+              setViewCopiedText(true);
+              setTimeout(() => {
+                setViewCopiedText(false);
+              }, 2000);
+            }}
+          >
+            {viewCopiedText ? copiedElement : copyElement}
+          </button>
+        </div>
+        {token ? (
+          <div className="col">
+            <button
+              className="data-request-button button button--primary"
+              onClick={() => {
+                const el = outputElement;
+                window.location.href = `mailto:support@spotify.com?subject=Endsong request (extented listening history)&body=${encodeURIComponent(
+                  el.innerText
+                )}`;
+              }}
+            >
+              {openInMailApp}
+            </button>
+          </div>
+        ) : null}
+      </div>
     </>
   );
 }
