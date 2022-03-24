@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import './style.css';
+import "./style.css";
 import {
   loginWithSpotify,
   copiedElement,
@@ -11,64 +11,64 @@ import {
   nameOftheLastSongSaved,
   artistOfThatSong,
   spotifyUsernameFormatted,
-} from './translations';
+} from "./translations";
 
 export default function DataRequestGenerator(): JSX.Element {
-  const [name, setName] = useState('<your name>');
+  const [name, setName] = useState("<your name>");
   const [profileLink, setProfileLink] = useState<string>(undefined);
   const [username, setUsername] = useState<string>(undefined);
   const [recentlyAddedSong, setRecentlyAddedSong] = useState<string>(undefined);
   const [recentlyAddedSongArtist, setRecentlyAddedSongArtist] =
     useState<string>(undefined);
-  const [outputElement, setOutputElement] = useState<HTMLPreElement>(null);
+  const [outputElement, setOutputElement] = useState<HTMLSpanElement>(null);
   const [viewCopiedText, setViewCopiedText] = useState(false);
-  const [token, setToken] = useState('');
+  const [token, setToken] = useState("");
 
-  const spotifyClientId = '52242e73817e4096ad71500937a1fb58';
-  const spotifyScopes = 'user-read-private user-library-read';
+  const spotifyClientId = "52242e73817e4096ad71500937a1fb58";
+  const spotifyScopes = "user-read-private user-library-read";
 
   const spotifyLoginUrl = [
-    'https://accounts.spotify.com/authorize?client_id=',
+    "https://accounts.spotify.com/authorize?client_id=",
     spotifyClientId,
-    '&response_type=token&redirect_uri=',
+    "&response_type=token&redirect_uri=",
     encodeURIComponent(
       `${window.location.protocol}//${window.location.host.replace(
-        'www.',
-        ''
+        "www.",
+        ""
       )}/spotify_callback`
     ),
-    '&scope=',
+    "&scope=",
     spotifyScopes,
-  ].join('');
+  ].join("");
 
   async function spotifyCallbackMessageHandler(event: MessageEvent) {
     if (
       event.origin !==
-      `${window.location.protocol}//${window.location.host.replace('www.', '')}`
+      `${window.location.protocol}//${window.location.host.replace("www.", "")}`
     )
       return;
     if (
-      event.data.type === 'spotify_callback' &&
+      event.data.type === "spotify_callback" &&
       event.data.token !== undefined
     ) {
       setToken(event.data.token);
-      const me = await fetch('https://api.spotify.com/v1/me', {
-        headers: {
-          Authorization: `Bearer ${event.data.token}`,
-        },
-      })
-        .then((res) => res.json())
-        .catch(() => undefined);
-      const savedTrack = (
-        await fetch('https://api.spotify.com/v1/me/tracks?limit=1', {
+      const [me, savedTrack] = await Promise.all([
+        await fetch("https://api.spotify.com/v1/me", {
+          headers: {
+            Authorization: `Bearer ${event.data.token}`,
+          },
+        })
+          .then((res) => res.json())
+          .catch(() => undefined),
+        await fetch("https://api.spotify.com/v1/me/tracks?limit=1", {
           headers: {
             Authorization: `Bearer ${event.data.token}`,
           },
         })
           .then((response) => response.json())
-          .catch(() => undefined)
-      )?.items[0]?.track;
-      console.log(me, savedTrack);
+          .then(async (data) => (await data)?.items[0]?.track)
+          .catch(() => undefined),
+      ]);
       if (me !== undefined && savedTrack !== undefined) {
         setName(
           me.display_name.substring(0, 1).toUpperCase() +
@@ -83,36 +83,66 @@ export default function DataRequestGenerator(): JSX.Element {
   }
 
   useEffect(() => {
-    window.addEventListener('message', spotifyCallbackMessageHandler);
+    window.addEventListener("message", spotifyCallbackMessageHandler);
     return () => {
-      window.removeEventListener('message', spotifyCallbackMessageHandler);
+      window.removeEventListener("message", spotifyCallbackMessageHandler);
     };
   }, []);
 
   return (
     <>
-      <pre ref={(preElement) => setOutputElement(preElement)}>
-        Hi,
-        <br />
-        <br />I would like to receive a copy of my extended lifetime streaming
-        history in technical endsong.json format. The data requested from the
-        privacy tab on the spotify.com/account page only includes the data of
-        last year, and I want my lifetime data (so the endsong.json files).
-        <br />
-        <br />A link to my Spotify profile is{' '}
-        {profileLink ?? linkToYourSpotifyProfile} and my username is{' '}
-        {username ?? spotifyUsername}. A song I've recently added to my library
-        is "{recentlyAddedSong ?? nameOftheLastSongSaved}" by{' '}
-        {recentlyAddedSongArtist ?? artistOfThatSong}.<br />
-        <br />
-        And just to be sure: I don't want the data I can request myself with the
-        button on my account page, I'm looking for the "endsong.json" files.
-        <br />
-        <br />
-        Best regards,
-        <br />
-        {name ?? spotifyUsernameFormatted}
-      </pre>
+      <div
+        style={{
+          borderLeft:
+            "solid var(--ifm-blockquote-border-left-width) var(--ifm-blockquote-border-color)",
+          paddingLeft: "var(--ifm-blockquote-padding-horizontal)",
+        }}
+      >
+        <span
+          style={{
+            whiteSpace: "pre-wrap",
+            color: "rgb(143, 143, 143)",
+          }}
+          ref={(spanElement) => setOutputElement(spanElement)}
+        >
+          Hi,
+          <br />
+          <br />I would like to receive a copy of my extended lifetime streaming
+          history in technical endsong.json format. The data requested from the
+          privacy tab on the spotify.com/account page only includes the data of
+          last year, and I want my lifetime data (so the endsong.json files).
+          <br />
+          <br />A link to my Spotify profile is{" "}
+          <span style={{ color: "var(--ifm-font-color-base)" }}>
+            {profileLink ?? linkToYourSpotifyProfile}
+          </span>{" "}
+          and my username is{" "}
+          <span style={{ color: "var(--ifm-font-color-base)" }}>
+            {username ?? spotifyUsername}
+          </span>
+          . A song I've recently added to my library is "
+          <span style={{ color: "var(--ifm-font-color-base)" }}>
+            {recentlyAddedSong ?? nameOftheLastSongSaved}
+          </span>
+          " by{" "}
+          <span style={{ color: "var(--ifm-font-color-base)" }}>
+            {recentlyAddedSongArtist ?? artistOfThatSong}
+          </span>
+          .<br />
+          <br />
+          And just to be sure: I don't want the data I can request myself with
+          the button on my account page, I'm looking for the "endsong.json"
+          files.
+          <br />
+          <br />
+          Best regards,
+          <br />
+          <span style={{ color: "var(--ifm-font-color-base)" }}>
+            {name ?? spotifyUsernameFormatted}
+          </span>
+        </span>
+      </div>
+      <br />
       <div className="row">
         {!token ? (
           <div className="col">
@@ -121,8 +151,8 @@ export default function DataRequestGenerator(): JSX.Element {
               onClick={() => {
                 window.open(
                   spotifyLoginUrl,
-                  'Login with Spotify',
-                  'width=800,height=600'
+                  "Login with Spotify",
+                  "width=800,height=600"
                 );
               }}
             >
@@ -166,9 +196,9 @@ export default function DataRequestGenerator(): JSX.Element {
 }
 
 async function copyTextToClipboard(text: string) {
-  if ('clipboard' in navigator) {
+  if ("clipboard" in navigator) {
     return navigator.clipboard.writeText(text);
   } else {
-    return document.execCommand('copy', true, text);
+    return document.execCommand("copy", true, text);
   }
 }
