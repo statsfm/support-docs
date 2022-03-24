@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endsong mail generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#111112]">
+    <main id="app">
+      <div v-if="!framed" class="flex flex-col items-center mt-5">
+        <div class="flex gap-3 content-center items-center flex-row">
+          <svg
+            class="h-[1.7rem] w-[1.7rem]"
+            width="512"
+            fill="#22c55e"
+            height="512"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M77.7698 151.964H31.8607C14.3745 151.964 0.199219 166.169 0.199219 183.691V477.17C0.199219 494.691 14.3745 508.896 31.8607 508.896H77.7698C95.256 508.896 109.431 494.691 109.431 477.17V183.691C109.431 166.169 95.256 151.964 77.7698 151.964Z"
+            />
+            <path
+              d="M277.239 0.72998H231.33C213.843 0.72998 199.668 14.9348 199.668 32.4574V477.17C199.668 494.691 213.843 508.896 231.33 508.896H277.239C294.726 508.896 308.9 494.691 308.9 477.17V32.4574C308.9 14.9348 294.726 0.72998 277.239 0.72998Z"
+            />
+            <path
+              d="M476.702 291.035H430.794C413.306 291.035 399.133 305.24 399.133 322.761V477.168C399.133 494.691 413.306 508.896 430.794 508.896H476.702C494.19 508.896 508.363 494.691 508.363 477.168V322.761C508.363 305.24 494.19 291.035 476.702 291.035Z"
+            />
+          </svg>
+          <h1 class="text-2xl font-bold text-white">Stats.fm</h1>
+        </div>
+      </div>
+      <template v-if="me != null && savedTrack != null">
+        <div
+          :class="framed == true ? 'mx-auto rounded-xl text-neutral-400' : 'md:w-[80vw] w-[95vw] mx-auto rounded-xl bg-[#18181c] py-3 px-4 mt-5 text-neutral-400'"
+        >
+          <h1 v-if="!framed" class="text-white text-2xl font-medium mb-3">
+            Endsong mail generator
+          </h1>
+          <span ref="textRef">
+            Hi,
+            <br /><br />
+            I would like to receive a copy of my extended lifetime streaming
+            history in technical endsong.json format. The data requested from
+            the privacy tab on the spotify.com/account page only includes the
+            data of last year, and I want my lifetime data (so the endsong.json
+            files). A link to my Spotify profile is {{ me.external_urls.spotify
+            }} and my username is {{me.display_name}}. A song I've recently
+            added to my library is "{{savedTrack.name}}" by
+            {{savedTrack.artists[0].name}}.
+            <br /><br />
+            And just to be sure: I don't want the data I can request myself with
+            the button on my account page, I'm looking for the "endsong.json"
+            files.
+            <br /><br />
+            Best regards, {{ me.display_name.substring(0, 1).toUpperCase() +
+            me.display_name.substring(1) }}
+          </span>
+          <div v-if="!framed" class="py-6">
+            <div class="w-full border-t border-gray-600"></div>
+          </div>
+          <br v-if="framed" />
+          <br v-if="framed" />
+          <div class="mb-2 grid grid-flow-col gap-5">
+            <button
+              @click="copy"
+              class="bg-[#22c55e] rounded-xl font-bold text-white text-center px-2 py-2 transition duration-300 ease-in-out hover:bg-[#20a852] text-[#111112] col-span-6"
+            >
+              {{copyText}}
+            </button>
+            <button
+              @click="openMail"
+              class="bg-[#22c55e] rounded-xl font-bold text-white text-center px-2 py-2 transition duration-300 ease-in-out hover:bg-[#20a852] text-[#111112] col-span-6"
+            >
+              Open in mail app
+            </button>
+          </div>
+        </div>
+      </template>
+      <template v-else>
+        <div class="w-screen px-10 items-center grid">
+          <button
+            @click="login"
+            class="bg-[#22c55e] rounded-xl font-bold text-white text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-[#20a852] text-[#111112]"
+          >
+            Login with Spotify to continue
+          </button>
+        </div>
+      </template>
+      <div v-if="!framed" class="flex flex-col items-center mt-5">
+        <a
+          href="https://support.spotistats.app/docs/import/streaming-history"
+          class="text-[#22c55e] font-bold"
+          ><- Back to the import guide</a
+        >
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"></script>
+    <script defer>
+      const app = new Vue({
+        el: "#app",
+        data() {
+          return {
+            client_id: "52242e73817e4096ad71500937a1fb58",
+            scopes: "user-read-private user-library-read",
+            redirect_uri: `https://${location.host}/endsong_mail_generator.html`,
+            me: null,
+            savedTrack: null,
+            token: null,
+            textRef: null,
+            copyText: "Copy",
+            framed: false,
+          };
+        },
+        methods: {
+          login() {
+            const url = `https://accounts.spotify.com/authorize?client_id=${this.client_id}&response_type=token&redirect_uri=${this.redirect_uri}&scope=${this.scopes}`;
+            let popup = window.open(
+              url,
+              "Login with Spotify",
+              "width=800,height=600"
+            );
+
+            window.spotifyCallback = (token) => {
+              popup.close();
+              this.init();
+            };
+          },
+          getMe() {
+            fetch("https://api.spotify.com/v1/me", {
+              headers: {
+                Authorization: `Bearer ${this.token}`,
+              },
+            })
+              .then((response) => {
+                return response.json();
+              })
+              .then((data) => {
+                this.me = data;
+              });
+          },
+          getSavedTrack() {
+            fetch("https://api.spotify.com/v1/me/tracks?limit=1", {
+              headers: {
+                Authorization: `Bearer ${this.token}`,
+              },
+            })
+              .then((response) => {
+                return response.json();
+              })
+              .then((data) => {
+                this.savedTrack = data.items[0].track;
+              });
+          },
+          copy() {
+            navigator.clipboard
+              .writeText(this.$refs.textRef.innerText)
+              .then((_) => {
+                this.copyText = "Copied!";
+                setTimeout((_) => {
+                  this.copyText = "Copy";
+                }, 2000);
+              });
+          },
+          openMail() {
+            window.location.href = `mailto:support@spotify.com?subject=Endsong request (extented listening history)&body=${encodeURIComponent(
+              this.$refs.textRef.innerText
+            )}`;
+          },
+          init() {
+            this.token = localStorage.getItem("token");
+
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            if ("framed" in params && params.framed.toString() == "true") {
+              this.framed = true;
+              this.redirect_uri += "?framed=true";
+            }
+
+            if (this.token) {
+              this.getMe();
+              this.getSavedTrack();
+            }
+          },
+        },
+        mounted() {
+          const newToken = window.location.hash
+            .substr(1)
+            .split("&")[0]
+            .split("=")[1];
+          if (typeof newToken == "string") {
+            localStorage.setItem("token", newToken);
+            this.token = newToken;
+            window.opener.spotifyCallback(this.token);
+            return;
+          }
+
+          this.init();
+
+          window.addEventListener(
+            "message",
+            (event) => {
+              if (event.data == "heightPls") {
+                event.source.postMessage(
+                  { height: window.document.body.scrollHeight + "px" },
+                  event.origin
+                );
+              }
+            },
+            false
+          );
+        },
+      });
+    </script>
+  </body>
+</html>
