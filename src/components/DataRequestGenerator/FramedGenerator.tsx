@@ -38,7 +38,7 @@ export default class FramedGenerator extends Component<
           );
         }}
         ref="iframe"
-        src="https://spotify-endsong-mail-generator.pages.dev?framed=true"
+        src={`https://${location.host}/endsong_mail_generator.html?framed=true`}
         width="100%"
         allow="clipboard-read; clipboard-write"
         height={this.state.iFrameHeight}
