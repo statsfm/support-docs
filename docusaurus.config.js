@@ -17,9 +17,7 @@ const config = {
   favicon: 'img/favicon.ico',
   i18n: {
     defaultLocale: 'en',
-    locales: isPreview
-      ? ['en']
-      : ['en', 'nl-NL', 'hi-IN', 'de-DE', 'fr-FR', 'pt-BR', 'ru-RU'],
+    locales: isPreview ? ['en'] : ['en'],
   },
 
   presets: [
@@ -123,6 +121,23 @@ const config = {
         highlightSearchTermsOnTargetPage: false,
       },
     ],
+    function (context, options) {
+      return {
+        name: 'loaders',
+        configureWebpack() {
+          return {
+            module: {
+              rules: [
+                {
+                  test: /\.html$/i,
+                  use: 'html-loader',
+                },
+              ],
+            },
+          };
+        },
+      };
+    },
   ],
 };
 
