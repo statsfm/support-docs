@@ -23,4 +23,4 @@ We appreciate your help! You can contribute to our translations on [our Crowdin 
 ## More FAQs
 
 - [Stats.fm Plus FAQ](./statsfm-plus/faq)
-- [Import FAQ](./import/faq)
+- Import FAQ, check out the FAQ in the sidebar under the Import FAQ tab.

@@ -10,7 +10,7 @@ Spotify provides some streaming data through [their API](https://developer.spoti
 
 - Viewing how many times you streamed an artist, tracks or album
 - Viewing your full streaming history (obviously)
-- Sorting your top tracks & artists by the amount of streams [instead of machine learning](./faq#machine-learning-vs-count).
+- Sorting your top tracks & artists by the amount of streams [instead of machine learning](./faq/calculation-methods).
 - Viewing charts which include some amount of streams
 
 ## How often do I need to import my streaming history?
