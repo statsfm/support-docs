@@ -68,6 +68,7 @@ const config = {
           alt: 'Stats.fm Support',
           src: 'img/logo.svg',
           width: 22,
+          href: '/docs',
         },
         items: [
           {
