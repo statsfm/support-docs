@@ -86,7 +86,7 @@ const config = {
             position: 'right',
             dropdownItemsAfter: [
               {
-                href: 'https://translate.spotistats.app',
+                href: 'https://translate.stats.fm',
                 label: 'Help Us Translate',
               },
             ],
