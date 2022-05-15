@@ -20,4 +20,4 @@ You can download the desktop app [here](https://statsfm.isontic.com), It is curr
 
 ### Microsoft Defender
 
-Microsoft Defender might window might popup when trying to install (This is because we don't have a verified publisher certificate yet), If it does click on "More Info". This should bring up a option to run anyway.
+A Microsoft Defender window might popup when trying to install, this is because we don't have a verified publisher certificate yet. Please click on "More Info" if it pops up, this should bring up a option to run anyway.
