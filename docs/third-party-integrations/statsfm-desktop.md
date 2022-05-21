@@ -1,18 +1,18 @@
 ---
-title: Stats.fm Desktop
+title: Specter for Stats.fm
 tags: [desktop, third-party]
-description: Information about Stats.fm Desktop.
+description: Information about Specter for Stats.fm.
 ---
 
-# Stats.fm Desktop
+# Specter for Stats.fm
 
 :::info Notice
 
-Stats.fm Desktop is endorsed by Stats.fm, but not an official desktop app.
+Specter for Stats.fm is endorsed by Stats.fm, but not an official desktop app.
 
 :::
 
-Stats.fm Desktop is created by [Elias Deuss](https://deuss.dev/).
+Specter for Stats.fm is created by [Elias Deuss](https://deuss.dev/).
 
 ## Installation
 
