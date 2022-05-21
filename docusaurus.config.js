@@ -19,7 +19,19 @@ const config = {
     defaultLocale: 'en',
     locales: isPreview
       ? ['en']
-      : ['en', 'nl-NL', 'hi-IN', 'de-DE', 'fr-FR', 'pt-BR', 'ru-RU'],
+      : [
+          'en',
+          'nl-NL',
+          'hi-IN',
+          'de-DE',
+          'fr-FR',
+          'pt-BR',
+          'ru-RU',
+          'cs-CZ',
+          'ko-KR',
+          'pl-PL',
+          'es-ES',
+        ],
   },
 
   presets: [
