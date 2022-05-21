@@ -16,17 +16,17 @@ Stats.fm Desktop is created by [Elias Deuss](https://deuss.dev/).
 
 ## Installation
 
-You can download the desktop app [here](https://statsfm.isontic.com/download), It is currently available for Windows and MacOS!
+You can download the desktop app [here](https://specter.isontic.com/download), It is currently available for Windows and MacOS!
 
 ### macOS Installation
 
 Step 1: Install Testflight [here](https://itunes.apple.com/us/app/testflight/id899247664?mt=8)
 
-Step 2: Join the macOS Beta [here](https://statsfm.isontic.com/download)
+Step 2: Join the macOS Beta [here](https://specter.isontic.com/download)
 
 ### Windows Installation
 
-Step 1: Download Alpha [here](https://statsfm.isontic.com/download)
+Step 1: Download Alpha [here](https://specter.isontic.com/download)
 
 Step 2: Double click on the setup file.
 
