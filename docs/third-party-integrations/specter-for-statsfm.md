@@ -16,7 +16,7 @@ Specter for Stats.fm is created by [Elias Deuss](https://deuss.dev/).
 
 ## Installation
 
-You can download the desktop app [here](https://specter.isontic.com/download), It is currently available for Windows and MacOS!
+You can download the desktop app [here](https://specter.isontic.com/download), it is currently available for Windows and MacOS!
 
 ### macOS Installation
 
