@@ -6,6 +6,12 @@ description: How to import your Spotify streaming history
 
 # Import Guide
 
+:::info Info
+
+Stats.fm Plus is required to import your streaming history to Stats.fm at the moment!
+
+:::
+
 import DataRequestGenerator from '@site/src/components/DataRequestGenerator';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
@@ -61,13 +67,13 @@ You can only upload one `endsong.json` file at a time.
 
 When you have your extracted .JSON files ready, go to [stats.fm/import](https://stats.fm/import), login and click the _Import a new file_ button. Then, select your first `endsong.json` file. You have to upload files one by one.
 
-After clicking selecting the file, your file will be sent to the Spotistats servers to be processed. This can take a few minutes. Meanwhile you can already upload your next file.
+After clicking selecting the file, your file will be sent to the Stats.fm servers to be processed. This can take a few minutes. Meanwhile you can already upload your next file.
 
 ![Step 6 image](./step-6.png)
 
 ## 7. Wait for your streams to be processed
 
-Once your streams have reached the Spotistats servers, they need to be processed. Duplicate streams will be filtered out, and there will be a lot of calculations made for each stream in order to save it securely in the database. This can take a while. Depending on the amount of streams and the amount of people importing their streams at once this can take just a few seconds up to a couple of hours.
+Once your streams have reached the Stats.fm servers, they need to be processed. Duplicate streams will be filtered out, and there will be a lot of calculations made for each stream in order to save it securely in the database. This can take a while. Depending on the amount of streams and the amount of people importing their streams at once this can take just a few seconds up to a couple of hours.
 
 :::tip Tip
 
