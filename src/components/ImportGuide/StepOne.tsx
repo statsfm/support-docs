@@ -93,8 +93,8 @@ export default function StepOne(): JSX.Element {
             <li>
               <p>
                 <Translate id="importguide.stepone.livechat.steptwo.text">
-                  When ask about the topic or the issue, select "Data &
-                  privacy". If no such option are coming up, just type "Data &
+                  When asked about the topic or the issue, select "Data &
+                  privacy". If no such option is coming up, just type "Data &
                   privacy" in the chat and hit Enter.
                 </Translate>
               </p>
