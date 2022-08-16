@@ -7,13 +7,13 @@ description: Welcome to the Stats.fm Support Centre
 
 # Welcome to the Stats.fm Support Centre
 
-:::info Info
+:::info
 
 We are rebranding from Spotistats to Stats.fm, for more information click [here](./statsfm.md).
 
 :::
 
-:::tip Tip
+:::tip
 
 If you are you here to import your streaming history, please go to the [Import Guide](./import/streaming-history.md).
 

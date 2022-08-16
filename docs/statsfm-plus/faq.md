@@ -20,7 +20,7 @@ Follow this [guide](../import/streaming-history) to import your streaming histor
 
 ## I bought Plus but there are no changes to the app
 
-:::note Note
+:::note
 
 We have moved this FAQ entry to its own page, please click [here](./bought-plus-but-no-changes.md).
 
@@ -28,7 +28,7 @@ We have moved this FAQ entry to its own page, please click [here](./bought-plus-
 
 ## Can I transfer my Plus purchase to another account?
 
-:::note Note
+:::note
 
 We have moved this FAQ entry to its own page, please click [here](./transfer-plus).
 
