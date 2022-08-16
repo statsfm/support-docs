@@ -67,7 +67,7 @@ export default function StepOne(): JSX.Element {
                   id="importguide.stepone.livechat.stepone"
                   values={{
                     supportLink: (
-                      <Link to="https://support.spotify.com/us/contact-spotify-privacy/">
+                      <Link to="https://support.spotify.com/contact-spotify-privacy/">
                         <Translate id="importguide.stepone.livechat.stepone.spotifysupport.link">
                           Spotify Support page
                         </Translate>
