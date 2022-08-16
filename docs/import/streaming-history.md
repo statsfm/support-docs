@@ -6,12 +6,6 @@ description: How to import your Spotify streaming history
 
 # Import Guide
 
-:::info Info
-
-Stats.fm Plus is required to import your streaming history to Stats.fm at the moment!
-
-:::
-
 import DataRequestGenerator from '@site/src/components/DataRequestGenerator';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import StepOne from '@site/src/components/ImportGuide/StepOne';
