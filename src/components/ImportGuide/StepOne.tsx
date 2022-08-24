@@ -11,7 +11,7 @@ export default function StepOne(): JSX.Element {
   return (
     <>
       <Tabs>
-        <TabItem value="email" label="Email">
+        <TabItem value="email" label="Email" default>
           <Admonition type="tip" title="Tip">
             <p>
               <Translate id="importguide.stepone.email.tip">
@@ -40,7 +40,7 @@ export default function StepOne(): JSX.Element {
           <BrowserOnly>{() => <DataRequestGenerator />}</BrowserOnly>
         </TabItem>
 
-        <TabItem value="livechat" label="Live Chat" default>
+        <TabItem value="livechat" label="Live Chat">
           <Admonition type="tip" title="Tip">
             <p>
               <Translate id="importguide.stepone.livechat.logintip">
