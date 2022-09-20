@@ -6,7 +6,7 @@ description: What bans are given for and what to do when you're banned from the 
 
 # Banned
 
-In order to keep the app integer and fun for everyone, users can be banned for multiple reasons. The most common reasons are:
+In order to keep the app trustworthy and fun for everyone, users can be banned for multiple reasons. The most common reasons are:
 * Stream fraud (faking streams to become the top listener for example)
 * Sending abusive chat messages
 * Using abusive content as your profile picture or in your bio
