@@ -34,7 +34,7 @@ export default function StepOne(): JSX.Element {
             }}
           >
             {
-              "In order to request the {endsong} files you need to import your streaming history, you'll need to send a simple email to {spotifyemail}. You can login with your Spotify below to generate the email automatically or fill in the text yourself after copying it."
+              "In order to request the {endsong} files, you'll need to send a simple email to {spotifyemail}. You can login with your Spotify below to generate the email automatically or fill in the text yourself after copying it."
             }
           </Translate>
           <BrowserOnly>{() => <DataRequestGenerator />}</BrowserOnly>
