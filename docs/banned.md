@@ -1,7 +1,7 @@
 ---
 title: Banned from the platform
 tags: [ban, login]
-description: What bans are given for and what to do when you're banned from the platform
+description: Reasons bans can be given and what to do when you are banned from the platform
 ---
 
 # Banned
@@ -12,7 +12,7 @@ In order to keep the app trustworthy and fun for everyone, users can be banned f
 * Using abusive content as your profile picture or in your bio
 
 ## What to do when I'm banned?
-If you're banned all your streams will be deleted from the platform and your account will go in lockdown mode. You won't be able to sign in anymore until you get unbanned.
+If you are banned, all your streams will be deleted from the platform and your account will go into lockdown mode. You won't be able to sign in anymore until you get unbanned.
 
 If you feel as if you've been falsely banned and wish to appeal, please send a message to [support@stats.fm](mailto:support@stats.fm).
 
