@@ -10,7 +10,7 @@ After importing your streaming history (which you can read more about [here](../
 
 ## How it works
 
-About every 100 minutes, your 50 most recently played tracks are fetched from Spotify and saved to the database where your imported streams are stored as well. Because this happens continuously, the database - and thus the data in the app - will be kept up to date :)
+About every 60 minutes, your 50 most recently played tracks are fetched from Spotify and saved to the database where your imported streams are stored as well. Because this happens continuously, the database - and thus the data in the app - will be kept up to date :)
 
 ## Enabling
 
