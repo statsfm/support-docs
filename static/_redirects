@@ -4,11 +4,12 @@
 /changelog/1.2.5* /blog/changelog-1.2.5
 /faq* /docs/faq
 /i-purchased-plus-but-it-doesnt-show* /docs/statsfm-plus/bought-plus-but-no-changes
-/import/guide* /docs/import/streaming-history
+/import/guide* /docs/import/spotify-import
+/docs/import/streaming-history* /docs/import/spotify-import
 /import* /docs/import
 /machine-learning-vs-count* /docs/import/faq/calculation-methods
 /permissions* /docs/permissions
 /streams/sync* /docs/streams/sync
 /streams* /docs/streams/sync
 /transfer-my-plus-purchase* /docs/statsfm-plus/transfer-plus
-/404.html* /404
+/404.html\* /404

@@ -21,7 +21,7 @@ This is currently the default option. Items are provided and sorted by [Spotify'
 
 ### Count
 
-This way of sorting the items is way more accurate, since it just uses the amount of streams of that item. To really make use of the sort by count, you should [import your lifetime streaming history](../streaming-history). Selecting this sorting option will also allow for a list longer than 99 items, since it doesn't need the Spotify API (which is limited at 99). This also means that you can select custom time ranges, instead of the 3 predefined time ranges from the Spotify API.
+This way of sorting the items is way more accurate, since it just uses the amount of streams of that item. To really make use of the sort by count, you should [import your lifetime streaming history](../spotify-import). Selecting this sorting option will also allow for a list longer than 99 items, since it doesn't need the Spotify API (which is limited at 99). This also means that you can select custom time ranges, instead of the 3 predefined time ranges from the Spotify API.
 
 #### Advantages
 
@@ -31,11 +31,11 @@ This way of sorting the items is way more accurate, since it just uses the amoun
 
 #### Disadvantages
 
-- Requires a [one time import of your history](../streaming-history)
+- Requires a [one time import of your history](../spotify-import)
 
 ### Time played
 
-This way of sorting the items is just like the count sorting way more accurate, but it uses the time you've listened to the item instead of the amount of streams. To really make use of the sort by time played, you should [import your lifetime streaming history](../streaming-history). Selecting this sorting option will also allow for a list longer than 99 items, since it doesn't need the Spotify API (which is limited at 99). This also means that you can select custom time ranges, instead of the 3 predefined time ranges from the Spotify API.
+This way of sorting the items is just like the count sorting way more accurate, but it uses the time you've listened to the item instead of the amount of streams. To really make use of the sort by time played, you should [import your lifetime streaming history](../spotify-import). Selecting this sorting option will also allow for a list longer than 99 items, since it doesn't need the Spotify API (which is limited at 99). This also means that you can select custom time ranges, instead of the 3 predefined time ranges from the Spotify API.
 
 #### Advantages
 
@@ -46,4 +46,4 @@ This way of sorting the items is just like the count sorting way more accurate, 
 
 #### Disadvantages
 
-- Requires a [one time import of your history](../streaming-history)
+- Requires a [one time import of your history](../spotify-import)

@@ -16,7 +16,7 @@ Nope, Stats.fm Plus is a one time purchase.
 
 ## I bought Stats.fm Plus and want to use more advanced features, what do I need to do?
 
-Follow this [guide](../import/streaming-history) to import your streaming history.
+Follow this [guide](../import/spotify-import) to import your streaming history.
 
 ## I bought Plus but there are no changes to the app
 
