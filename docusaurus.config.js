@@ -64,6 +64,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'announcementBar_rebrand_notice', // Increment on change
+        content: `We've have rebranded to Stats.fm! Please check <a href="/docs/stats.fm">this page</a> for more information!`,
+      },
       metadata: [
         {
           name: 'theme-color',
@@ -89,9 +93,16 @@ const config = {
             label: 'Docs',
           },
           {
-            to: 'blog',
-            position: 'left',
-            label: 'Blog',
+            href: 'https://discord.gg/aV9EtB3',
+            className: 'navbar-item-discord',
+            position: 'right',
+            'aria-label': 'Discord server',
+          },
+          {
+            href: 'mailto:support@stats.fm',
+            position: 'right',
+            label: 'Need help?',
+            'aria-label': 'Support Email',
           },
           {
             type: 'localeDropdown',
@@ -103,16 +114,6 @@ const config = {
               },
             ],
           },
-          {
-            href: 'https://stats.fm',
-            className: 'navbar-item-website',
-            position: 'right',
-          },
-          {
-            href: 'https://discord.gg/aV9EtB3',
-            className: 'navbar-item-discord',
-            position: 'right',
-          },
         ],
       },
       colorMode: {
@@ -121,6 +122,69 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      footer: {
+        links: [
+          {
+            title: 'Stats.fm',
+            items: [
+              {
+                label: 'Home',
+                href: 'https://stats.fm',
+              },
+              {
+                label: 'Support',
+                to: '/',
+              },
+              {
+                label: 'Beta program',
+                href: 'https://stats.fm/beta',
+              },
+            ],
+          },
+          {
+            title: 'Socials',
+            items: [
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/aV9EtB3',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/spotistats',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/statsfm/',
+              },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Privacy',
+                href: 'https://stats.fm/privacy/',
+              },
+              {
+                label: 'Terms',
+                href: 'https://stats.fm/terms/',
+              },
+            ],
+          },
+          {
+            title: 'Download',
+            items: [
+              {
+                html: '<a href="https://apps.apple.com/app/spotistats-for-spotify/id1526912392" target="_blank" rel="noopener noreferrer"><img src="https://cdn.stats.fm/file/statsfm/images/brands/stores/app_store.webp" alt="apple" style="height: 2.25rem;"></a>',
+              },
+              {
+                html: '<a href="https://play.google.com/store/apps/details?id=dev.netlob.spotistats" target="_blank" rel="noopener noreferrer"><img src="https://cdn.stats.fm/file/statsfm/images/brands/stores/play_store.webp" alt="google" style="height: 2.25rem;"></a>',
+              },
+            ],
+          },
+        ],
+        copyright: `© ${new Date().getFullYear()} Stats.fm / Spotistats for Spotify. All rights reserved. Made with ❤️ in the Netherlands. `,
       },
     }),
   plugins: [

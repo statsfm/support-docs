@@ -1,5 +1,5 @@
 ---
-title: Stats.fm
+title: Stats.fm rebrand
 description: Explanation about why we are rebranding to Stats.fm
 ---
 

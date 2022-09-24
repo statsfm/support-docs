@@ -22,7 +22,7 @@ Follow this [guide](../import/streaming-history) to import your streaming histor
 
 :::note
 
-We have moved this FAQ entry to its own page, please click [here](./bought-plus-but-no-changes.md).
+We have moved this FAQ entry to its own page, please click [here](./bought-plus-but-no-changes).
 
 :::
 
@@ -33,3 +33,10 @@ We have moved this FAQ entry to its own page, please click [here](./bought-plus-
 We have moved this FAQ entry to its own page, please click [here](./transfer-plus).
 
 :::
+
+# Can I gift Stats.fm Plus to a friend? {#gift-plus}
+
+Yes! You can purchase Stats.fm Plus coupons for your friends or you at https://stats.fm/gift.
+_The available purchase options might vary depending on the country_.
+
+To redeem a Stats.fm Plus coupon you received, click [here](https://stats.fm/redeem).

@@ -1,10 +1,10 @@
 ---
-title: Import streaming history
+title: About importing
 tags: [import, streams]
 description: Import your streaming history from Spotify
 ---
 
-# Importing your streaming history
+# About importing
 
 Spotify provides some streaming data through [their API](https://developer.spotify.com/documentation/web-api/reference/), but this does not include the amount of times you've streamed a specific artist or track. In order to gain access to the features listed below, you'll have to import your streaming history.
 
@@ -15,7 +15,7 @@ Spotify provides some streaming data through [their API](https://developer.spoti
 
 ## How often do I need to import my streaming history?
 
-From the moment you've imported your first file, the systems will automatically keep your streaming history up to date about every 100 minutes. You can learn how to import your streaming history into the app [here](./streaming-history).
+From the moment you've imported your first file, the systems will automatically keep your streaming history up to date about every 100 minutes. You can learn how to import your streaming history into the app [here](./spotify-import).
 
 ## Why does the app show a different number of streams than the endsong.json files?
 
