@@ -36,7 +36,7 @@ export default function StepSix(): JSX.Element {
       <p>
         <Translate id="importguide.stepsix.two">
           After clicking selecting the file, your file will be sent to the
-          Spotistats servers to be processed. This can take a few minutes.
+          Stats.fm servers to be processed. This can take a few minutes.
           Meanwhile you can already upload your next file.
         </Translate>
       </p>

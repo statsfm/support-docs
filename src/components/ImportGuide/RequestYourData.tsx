@@ -56,7 +56,7 @@ export default function StepOne(): JSX.Element {
               }}
             >
               {
-                "In order to request the {endsong} files you need to import your streaming history,  simply contact Spotify's support via their live chat. Past experience has shown that this method to initiate the request for the files is more reliable, simpler and less error-prone than via the mail."
+                "In order to request the {endsong} files, simply contact Spotify's support via their live chat. Past experience has shown that this method to initiate the request for the files is more reliable, simpler and less error-prone than via the mail."
               }
             </Translate>
           </p>

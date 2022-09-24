@@ -66,7 +66,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar_rebrand_notice', // Increment on change
-        content: `We've have rebranded to Stats.fm! Please check <a href="/docs/stats.fm">this page</a> for more information!`,
+        content: `We've have rebranded to Stats.fm! Please check <a href="/docs/statsfm">this page</a> for more information!`,
       },
       metadata: [
         {

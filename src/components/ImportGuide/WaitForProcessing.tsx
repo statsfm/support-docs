@@ -8,7 +8,7 @@ export default function StepSeven(): JSX.Element {
     <>
       <p>
         <Translate id="importguide.stepseven.text">
-          Once your streams have reached the Spotistats servers, they need to be
+          Once your streams have reached the Stats.fm servers, they need to be
           processed. Duplicate streams will be filtered out, and there will be a
           lot of calculations made for each stream in order to save it securely
           in the database. This can take a while. Depending on the amount of
