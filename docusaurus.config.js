@@ -39,14 +39,6 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        blog: {
-          path: 'blog',
-          routeBasePath: '/blog/',
-          showReadingTime: true,
-          remarkPlugins: [],
-          blogDescription:
-            'Stay up to date with the latest news and updates from Stats.fm',
-        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [],
