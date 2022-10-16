@@ -1,4 +1,4 @@
-# Stats.fm Support Documentation
+# stats.fm Support Documentation
 
 ### Installation
 

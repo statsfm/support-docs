@@ -12,7 +12,7 @@ There are some issues with the App Store, meaning it can take a couple of days b
 
 Unfortunately there's no way for me to check the status of your purchase. There are two things you can do:
 
-- Try to purchase it again. Stats.fm Plus is a so-called "non-consumable" in app purchase, which means you can only buy it once (and only get charged once). If the purchase proceeds that means that the previous purchase has failed. If the purchase fails and says "You already own this item, you'll receive it for free" that means that the previous purchase has indeed went through.
+- Try to purchase it again. stats.fm Plus is a so-called "non-consumable" in app purchase, which means you can only buy it once (and only get charged once). If the purchase proceeds that means that the previous purchase has failed. If the purchase fails and says "You already own this item, you'll receive it for free" that means that the previous purchase has indeed went through.
 - Contact Apple's App Store support to check the status of your purchase at ([getsupport.apple.com](https://getsupport.apple.com)).
 
 ## Android
@@ -24,8 +24,8 @@ If you don't have Plus after purchasing it, this can mean two things:
 
 There are two things you can do to check this:
 
-- Try to purchase it again. Stats.fm Plus is a so-called "non-consumable" in app purchase, which means you can only buy it once (and only get charged once). If the purchase proceeds that means that the previous purchase has failed. If the purchase fails and says "You already own this item, you'll receive it for free" that means that the previous purchase has indeed went through.
+- Try to purchase it again. stats.fm Plus is a so-called "non-consumable" in app purchase, which means you can only buy it once (and only get charged once). If the purchase proceeds that means that the previous purchase has failed. If the purchase fails and says "You already own this item, you'll receive it for free" that means that the previous purchase has indeed went through.
 - Wait at least a day and click _Restore purchases_. If this doesn't work, you can send me an email with the following details so I can check the status of the order:
   - The Google order ID. You can find this in the email with your receipt and it should start with `GPA.`
   - The email address linked to your Google Play account
-  - A link to your Stats.fm or Spotify profile
+  - A link to your stats.fm or Spotify profile
