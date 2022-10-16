@@ -18,9 +18,9 @@ import UploadFiles from '@site/src/components/ImportGuide/UploadFiles';
 import WaitForProcessing from '@site/src/components/ImportGuide/WaitForProcessing';
 import ReadyToGo from '@site/src/components/ImportGuide/ReadyToGo';
 
-:::caution Stats.fm Plus required
+:::caution stats.fm Plus required
 
-To be able to import your Spotify streaming history, you need to have **Stats.fm Plus**.
+To be able to import your Spotify streaming history, you need to have **stats.fm Plus**.
 
 :::
 

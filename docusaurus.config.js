@@ -8,8 +8,8 @@ const isPreview = process.env.DEPLOY_CONTEXT === 'preview';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Stats.fm Support',
-  tagline: 'Stats.fm Support Centre',
+  title: 'stats.fm Support',
+  tagline: 'stats.fm Support Centre',
   url: 'https://support.stats.fm',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -31,6 +31,7 @@ const config = {
           'ko-KR',
           'pl-PL',
           'es-ES',
+          'el-GR',
         ],
   },
 
@@ -58,7 +59,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar_rebrand_notice', // Increment on change
-        content: `We've have rebranded to Stats.fm! Please check <a href="/docs/statsfm">this page</a> for more information!`,
+        content: `We've have rebranded to stats.fm!`,
       },
       metadata: [
         {
@@ -71,9 +72,9 @@ const config = {
         },
       ],
       navbar: {
-        title: 'Stats.fm Support',
+        title: 'stats.fm Support',
         logo: {
-          alt: 'Stats.fm Support',
+          alt: 'stats.fm Support',
           src: 'img/logo.svg',
           width: 22,
           href: '/docs',
@@ -118,7 +119,7 @@ const config = {
       footer: {
         links: [
           {
-            title: 'Stats.fm',
+            title: 'stats.fm',
             items: [
               {
                 label: 'Home',
@@ -176,7 +177,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} Stats.fm / Spotistats for Spotify. All rights reserved. Made with ❤️ in the Netherlands. `,
+        copyright: `© ${new Date().getFullYear()} stats.fm / Spotistats for Spotify. All rights reserved. Made with ❤️ in the Netherlands. `,
       },
     }),
   plugins: [

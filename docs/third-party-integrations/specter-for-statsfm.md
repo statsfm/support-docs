@@ -1,18 +1,18 @@
 ---
-title: Specter for Stats.fm
+title: Specter for stats.fm
 tags: [desktop, third-party]
-description: Information about Specter for Stats.fm.
+description: Information about Specter for stats.fm.
 ---
 
-# Specter for Stats.fm
+# Specter for stats.fm
 
 :::info Notice
 
-Specter for Stats.fm is endorsed by Stats.fm, but not an official desktop app.
+Specter for stats.fm is endorsed by stats.fm, but not an official desktop app.
 
 :::
 
-Specter for Stats.fm is created by [isontic](https://isontic.com).
+Specter for stats.fm is created by [isontic](https://isontic.com).
 
 ## Installation
 

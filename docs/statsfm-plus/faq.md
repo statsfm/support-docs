@@ -1,20 +1,20 @@
 ---
 title: Plus FAQ
 tags: [faq, plus]
-description: Frequently asked questions about Stats.fm Plus
+description: Frequently asked questions about stats.fm Plus
 ---
 
-# Stats.fm Plus FAQ
+# stats.fm Plus FAQ
 
-## Is Stats.fm Plus the same as Spotify Premium?
+## Is stats.fm Plus the same as Spotify Premium?
 
-No, **Stats.fm Plus** will unlock only certain functions within the **Stats.fm app** and is not linked to **Spotify Premium** or your Spotify account.
+No, **stats.fm Plus** will unlock only certain functions within the **stats.fm app** and is not linked to **Spotify Premium** or your Spotify account.
 
-## Is Stats.fm Plus a subscription?
+## Is stats.fm Plus a subscription?
 
-Nope, Stats.fm Plus is a one time purchase.
+Nope, stats.fm Plus is a one time purchase.
 
-## I bought Stats.fm Plus and want to use more advanced features, what do I need to do?
+## I bought stats.fm Plus and want to use more advanced features, what do I need to do?
 
 Follow this [guide](../import/spotify-import) to import your streaming history.
 
@@ -34,9 +34,9 @@ We have moved this FAQ entry to its own page, please click [here](./transfer-plu
 
 :::
 
-# Can I gift Stats.fm Plus to a friend? {#gift-plus}
+# Can I gift stats.fm Plus to a friend? {#gift-plus}
 
-Yes! You can purchase Stats.fm Plus coupons for your friends or you at https://stats.fm/gift.
+Yes! You can purchase stats.fm Plus coupons for your friends or you at https://stats.fm/gift.
 _The available purchase options might vary depending on the country_.
 
-To redeem a Stats.fm Plus coupon you received, click [here](https://stats.fm/redeem).
+To redeem a stats.fm Plus coupon you received, click [here](https://stats.fm/redeem).
