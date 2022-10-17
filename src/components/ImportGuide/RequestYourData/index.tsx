@@ -9,16 +9,16 @@ import { useLocation } from '@docusaurus/router';
 export default function RequestYourDataStep(): JSX.Element {
   const { search } = useLocation();
   const params = new URLSearchParams(search);
-  const tab = params.get('requestdatatab') ?? '';
+  const tab = params.get('requestdatatab') ?? 'default';
   return (
     <Tabs
       defaultValue={
-        ['web', 'email', 'livechat'].includes(tab.toLowerCase())
+        ['default', 'email', 'livechat'].includes(tab.toLowerCase())
           ? tab.toLowerCase()
-          : 'web'
+          : 'default'
       }
     >
-      <TabItem value="web" label="Web">
+      <TabItem value="default" label="Default">
         <WebDataRequest />
       </TabItem>
       <TabItem value="email" label="Email">
