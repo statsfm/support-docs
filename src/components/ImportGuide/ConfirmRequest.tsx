@@ -1,5 +1,5 @@
-import Translate, { translate } from '@docusaurus/Translate';
 import React from 'react';
+import Translate, { translate } from '@docusaurus/Translate';
 
 export default function StepTwo(): JSX.Element {
   return (

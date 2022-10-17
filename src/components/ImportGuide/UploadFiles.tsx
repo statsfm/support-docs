@@ -1,7 +1,7 @@
+import React from 'react';
 import Link from '@docusaurus/Link';
 import Translate, { translate } from '@docusaurus/Translate';
 import Admonition from '@theme/Admonition';
-import React from 'react';
 
 export default function StepSix(): JSX.Element {
   return (

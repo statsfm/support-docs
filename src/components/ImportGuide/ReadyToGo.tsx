@@ -1,8 +1,7 @@
+import React from 'react';
 import Translate from '@docusaurus/Translate';
 
-import React from 'react';
-
-export default function StepEi(): JSX.Element {
+export default function StepEight(): JSX.Element {
   return (
     <>
       <p>
