@@ -1,6 +1,6 @@
+import React from 'react';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
-import React from 'react';
 
 export default function StepThree(): JSX.Element {
   return (
