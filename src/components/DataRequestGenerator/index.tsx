@@ -147,7 +147,7 @@ export default function DataRequestGenerator(): JSX.Element {
         {!token ? (
           <div className="col">
             <button
-              className="data-request-button button button--primary"
+              className="statsfm-button button button--primary"
               onClick={() => {
                 window.open(
                   spotifyLoginUrl,
@@ -162,7 +162,7 @@ export default function DataRequestGenerator(): JSX.Element {
         ) : null}
         <div className="col">
           <button
-            className="data-request-button copyButton button button--primary"
+            className="statsfm-button copyButton button button--primary"
             onClick={() => {
               const el = outputElement;
               copyTextToClipboard(el.innerText);
@@ -178,7 +178,7 @@ export default function DataRequestGenerator(): JSX.Element {
         {token ? (
           <div className="col">
             <button
-              className="data-request-button button button--primary"
+              className="statsfm-button button button--primary"
               onClick={() => {
                 const el = outputElement;
                 window.location.href = `mailto:support@spotify.com?subject=Endsong request (extended listening history)&body=${encodeURIComponent(

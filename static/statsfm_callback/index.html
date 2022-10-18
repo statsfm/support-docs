@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stats.fm Callback</title>
+</head>
+
+<body>
+  <h1>Loading...</h1>
+  <p>This window should close automatically... If it doesn't please let us know at <a
+      href="mailto:support@stats.fm">support@stats.fm</a>.</p>
+</body>
+<script>
+  const query = new URLSearchParams(window.location.search);
+  if (window.opener) {
+    window.opener.postMessage(
+      {
+        type: 'statsfm_callback',
+        token: query.get('code'),
+      },
+      `${window.location.protocol}//${window.location.host.replace('www.', '')}`
+    );
+    setTimeout(() => window.close(), 50);
+  }
+</script>
+
+</html>
