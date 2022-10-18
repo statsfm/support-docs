@@ -59,7 +59,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar_rebrand_notice', // Increment on change
-        content: `We've have rebranded to stats.fm!`,
+        content: `We have rebranded to stats.fm!`,
       },
       metadata: [
         {
