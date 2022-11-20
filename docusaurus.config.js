@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const path = require('path');
 
 const isPreview = process.env.DEPLOY_CONTEXT === 'preview';
 
@@ -210,6 +211,7 @@ const config = {
         },
       };
     },
+    require.resolve(path.resolve(__dirname, 'plugins', 'goatcounter.js')),
   ],
 };
 
