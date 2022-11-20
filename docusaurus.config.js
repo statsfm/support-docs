@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const path = require('path');
 
 const isPreview = process.env.DEPLOY_CONTEXT === 'preview';
 
@@ -59,7 +60,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar_rebrand_notice', // Increment on change
-        content: `We've have rebranded to stats.fm!`,
+        content: `We have rebranded to stats.fm!`,
       },
       metadata: [
         {
@@ -210,6 +211,7 @@ const config = {
         },
       };
     },
+    require.resolve(path.resolve(__dirname, 'plugins', 'goatcounter.js')),
   ],
 };
 

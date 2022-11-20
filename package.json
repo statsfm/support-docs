@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@crowdin/cli": "^3.8.1",
-    "@docusaurus/core": "^2.1.0",
-    "@docusaurus/preset-classic": "^2.1.0",
+    "@docusaurus/core": "^2.2.0",
+    "@docusaurus/preset-classic": "^2.2.0",
     "@easyops-cn/docusaurus-search-local": "^0.32.0",
     "@mdx-js/react": "^1.6.22",
     "@statsfm/statsfm.js": "^1.16.3",
@@ -27,7 +27,7 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.1",
+    "@docusaurus/module-type-aliases": "^2.2.0",
     "@tsconfig/docusaurus": "^1.0.4",
     "html-loader": "^3.1.0",
     "typescript": "^4.5.2"
