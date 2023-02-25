@@ -13,12 +13,12 @@ export default function RequestYourDataStep(): JSX.Element {
   return (
     <Tabs
       defaultValue={
-        ['default', 'email', 'livechat'].includes(tab.toLowerCase())
+        ['recommended', 'email', 'livechat'].includes(tab.toLowerCase())
           ? tab.toLowerCase()
-          : 'default'
+          : 'recommended'
       }
     >
-      <TabItem value="default" label="Default">
+      <TabItem value="recommended" label="Recommended">
         <WebDataRequest />
       </TabItem>
       <TabItem value="email" label="Email">

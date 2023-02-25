@@ -14,7 +14,7 @@ import ConfirmRequest from '@site/src/components/ImportGuide/ConfirmRequest';
 import TurnOnSync from '@site/src/components/ImportGuide/TurnOnSync';
 import WaitForData from '@site/src/components/ImportGuide/WaitForData';
 import DownloadFiles from '@site/src/components/ImportGuide/DownloadFiles';
-import UploadFiles from '@site/src/components/ImportGuide/UploadFiles';
+import Importing from '@site/src/components/ImportGuide/Importing';
 import WaitForProcessing from '@site/src/components/ImportGuide/WaitForProcessing';
 import ReadyToGo from '@site/src/components/ImportGuide/ReadyToGo';
 
@@ -44,14 +44,10 @@ To be able to import your Spotify streaming history, you need to have **stats.fm
 
 <DownloadFiles />
 
-## 6. Upload your files
+## 6. Import your files
 
-<UploadFiles />
+<Importing />
 
-## 7. Wait for your streams to be processed
-
-<WaitForProcessing />
-
-## 8. Ready to go!
+## 7. Ready to go!
 
 <ReadyToGo />

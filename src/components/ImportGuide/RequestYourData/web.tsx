@@ -7,11 +7,9 @@ export default function WebDataRequest(): JSX.Element {
   return (
     <>
       <Admonition type="info" title="NEW">
-        <Translate id="importguide.stepone.web.newoption">
-          This method has been recently introduced since Spotify now allows you
-          to request your data via the website. This is the easiest and most
-          reliable way to request your data. You can still try the other methods
-          if you want to.
+        <Translate id="importguide.stepone.web.recommended">
+          This is the recommended way to request your data. There are other ways
+          to get to your data, but this is the easiest.
         </Translate>
       </Admonition>
       <p>
@@ -51,45 +49,23 @@ export default function WebDataRequest(): JSX.Element {
               Scroll down to the "Download your data" section.
             </Translate>
           </p>
-          <img
-            alt={translate({
-              message:
-                'Screenshot of the Spotify privacy page with the "Download your data" section in focus',
-              id: 'importguide.stepone.web.steptwo.image',
-            })}
-            width={500}
-            src="/img/import/privacy-step2.png"
-          />
         </li>
         <li>
           <p>
             <Translate id="importguide.stepone.web.stepthree">
-              Make sure to untick the box in the "Account data" panel.
-            </Translate>
-          </p>
-        </li>
-        <li>
-          <p>
-            <Translate id="importguide.stepone.web.stepfour">
-              Make sure to tick the box in the "Extended streaming history"
-              panel.
-            </Translate>
-          </p>
-        </li>
-        <li>
-          <p>
-            <Translate id="importguide.stepone.web.stepfive">
-              At the end, your configuration should look like this:
+              Configure the page so it looks like the screenshot below (Unticked
+              the "Account data" and ticked the "Extended streaming history"
+              boxes).
             </Translate>
           </p>
           <img
             alt={translate({
               message:
-                'Screenshot of the Spotify privacy page with the "Download your data" section in focus with the correct configured options',
-              id: 'importguide.stepone.web.stepfive.image',
+                'Screenshot of the Spotify privacy page with the "Download your data" section in focus with the correct configured options, unticked "Account data" and ticked "Extended streaming history"',
+              id: 'importguide.stepone.web.stepthree.image',
             })}
             width={500}
-            src="/img/import/privacy-step5.png"
+            src="/img/import/privacy-step3.png"
           />
         </li>
         <li>
