@@ -10,7 +10,7 @@ export default function AppImport(): JSX.Element {
           <Translate id="importguide.appimport.onlyoneendsongfile">
             stats.fm also offers you to import your files directly via the app.
             Compared to the web import it also allows you to import the entire
-            .zip folder with all the relevant files automatically instead of a
+            .zip file with all the relevant files automatically instead of a
             manual file-by-file upload.
           </Translate>
         </p>
