@@ -38,7 +38,7 @@ export default function ImportingStep(): JSX.Element {
       </Tabs>
       <p>
         No importable <code>endsong.json</code> files present in the files you
-        received? Check out <Link to="../faq/no-endsong">this article</Link>.
+        received? Check out <Link to="faq/no-endsong">this article</Link>.
       </p>
       <p>
         <Translate id="importguide.importingstep.streamprocessing">
