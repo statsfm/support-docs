@@ -6,6 +6,14 @@ description: Explanation about why the endsong.json may not be present.
 
 # There are no `endsong.json` files present in the files I received
 
-Spotify has unfortunately sent you the wrong files. Spotify has two types of file packages: a package with just some basic info which only covers one year (this package arrives around 3 days after requesting), and a package that includes over 60 files with detailed info and which has data from the minute you've signed up for Spotify (this package arrives about 2-3 weeks after requesting).
+| Type of data                          | Description                                                          | Data preparation time              |
+| ------------------------------------- | -------------------------------------------------------------------- | ---------------------------------- |
+| _Account data_                        | basic account information, one year of streaming data                | ~ 5 days                           |
+| _Technical log information_           | variety of technical log information Spotify has collected about you | up to 30 days                      |
+| **_Extended streaming history data_** | lifetime streaming history information (incl. `endsong.json` files)  | up to 30 days, averagely 2-3 weeks |
 
-In this case, you got the first package, which doesn't include the data needed. The Spotify employee who helped you probably doesn't even know of the existence of the large package. Sending the same email again may help, since another employee will respond to your request. Sorry for the inconvience!
+Only the Extended streaming history data package includes the required `endsong.json`-files to [import to stats.fm](../spotify-import), the other packages are both not eligble for importing! Sorry for the inconveniences! We're recommending to check the e-mail you've received from Spotify to download the data to ensure that you got the correct package.
+
+![Extendend streaming history data in your mail inbox](/img/import/step5.png 'Download your extended streaming history data')
+
+You most probably have requested other packages besides the Extended streaming history package. The correct package might still be processed by Spotify though, therefore please open [this page](https://www.spotify.com/account/privacy/) again, login with your Spotify and check the panel 'Extended streaming history data'. If it indicates that the package is still being processed you just need to have some more patience until the correct data arrives. If you have not requested it already, tick the checkmark for the 'Extended streaming history' and hit the request data button, afterwards continue with [step 2 of the import guide](../spotify-import#2-confirm-your-request).
