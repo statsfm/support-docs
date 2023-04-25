@@ -32,7 +32,7 @@ To be able to import your Spotify streaming history, you need to have **stats.fm
 
 <ConfirmRequest />
 
-## 3. Turn on _Sync streaming history_ to prevent a gap in your data
+## 3. Turn on _Sync streams_ to prevent a gap in your data
 
 <BrowserOnly>{() => <TurnOnSync />}</BrowserOnly>
 

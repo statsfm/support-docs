@@ -78,7 +78,7 @@ export default function StepThree(): JSX.Element {
             ),
           }}
         >
-          {`The files you receive from Spotify miss the last couple days of data. You can turn on the Sync streaming history setting
+          {`The files you receive from Spotify miss the last couple days of data. You can turn on the Sync streams setting
           after you have requested your files to make sure you do not miss any
           data. You can do so in the settings page on the mobile app or use the
           button below. You can read more about streaming history synchronisation {supportLink}.`}
