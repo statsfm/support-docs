@@ -58,10 +58,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'announcementBar_rebrand_notice', // Increment on change
-        content: `We have rebranded to stats.fm!`,
-      },
       metadata: [
         {
           name: 'theme-color',

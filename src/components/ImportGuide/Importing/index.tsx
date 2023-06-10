@@ -37,8 +37,7 @@ export default function ImportingStep(): JSX.Element {
         </TabItem>
       </Tabs>
       <p>
-        No importable <code>endsong.json</code> files present in the files you
-        received? Check out{' '}
+        No importable files present in the files you received? Check out{' '}
         <Link to="/docs/import/faq/no-endsong">this article</Link>.
       </p>
       <p>

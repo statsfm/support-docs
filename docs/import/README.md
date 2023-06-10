@@ -17,7 +17,7 @@ Spotify provides some streaming data through [their API](https://developer.spoti
 
 From the moment you've imported your first file, the systems will automatically keep your streaming history up to date about every 100 minutes. You can learn how to import your streaming history into the app [here](./spotify-import).
 
-## Why does the app show a different number of streams than the endsong.json files?
+## Why does the app show a different number of streams than the imported files?
 
 You may notice that the total amount of streams in your data files doesn't match the number shown on the stats page in the app. This happens because stats.fm filters out a couple of types of streams:
 

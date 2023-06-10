@@ -24,6 +24,12 @@ To be able to import your Spotify streaming history, you need to have **stats.fm
 
 :::
 
+:::info
+
+Spotify has changed the files they provided, upload all JSON files you received from Spotify excluding the video JSON file(s).
+
+:::
+
 ## 1. Request your data from Spotify
 
 <RequestYourData />

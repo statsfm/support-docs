@@ -26,12 +26,11 @@ export default function AppImport(): JSX.Element {
         <Translate
           id="importguide.appimport.choosefile"
           values={{
-            filename: <code>endsong.json</code>,
             zipfilename: <code>my_spotify_data.zip</code>,
           }}
         >
           {
-            'On the page you just landed on, you are able to choose between uploading the zip file ({zipfilename}) or the files ({filename}) individually.'
+            'On the page you just landed on, you are able to choose between uploading the zip file ({zipfilename}) or the JSON files individually.'
           }
         </Translate>
       </p>

@@ -8,15 +8,8 @@ export default function WebImport(): JSX.Element {
     <>
       <Admonition type="info">
         <p>
-          <Translate
-            id="importguide.webimport.onlyoneendsongfile"
-            values={{
-              endsong: <code>endsong.json</code>,
-            }}
-          >
-            {
-              'You can only upload one {endsong} file at a time via the website.'
-            }
+          <Translate id="importguide.webimport.onlyoneendsongfile">
+            {'You can only upload one file at a time via the website.'}
           </Translate>
         </p>
       </Admonition>
@@ -24,14 +17,13 @@ export default function WebImport(): JSX.Element {
         <Translate
           id="importguide.webimport.steps.one"
           values={{
-            endsong: <code>endsong.json</code>,
             importpage: (
               <Link to="https://stats.fm/import">https://stats.fm/import</Link>
             ),
           }}
         >
           {
-            'When you have your extracted .JSON files ready, go to {importpage}, login and click "Import a new file" button. Then, select your first {endsong} file. You have to upload files one by one.'
+            'When you have your extracted .JSON files ready, go to {importpage}, login and click "Import a new file" button. Then, select your first JSON file. You have to upload files one by one.'
           }
         </Translate>
       </p>

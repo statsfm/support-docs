@@ -6,7 +6,7 @@ if [ "$DEPLOY_CONTEXT" == "preview" ]; then
   echo "Skipping crowdin upload and download"
 else
   echo "Uploading and downloading translations from crowdin..."
-  yarn crowdin upload sources
+  # yarn crowdin upload sources
   yarn crowdin download
 fi
 yarn build

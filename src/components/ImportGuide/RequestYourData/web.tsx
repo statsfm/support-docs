@@ -1,26 +1,14 @@
 import React from 'react';
-import Admonition from '@theme/Admonition';
 import Translate, { translate } from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 
 export default function WebDataRequest(): JSX.Element {
   return (
     <>
-      <Admonition type="info" title="NEW">
-        <Translate id="importguide.stepone.web.recommended">
-          This is the recommended way to request your data. There are other ways
-          to get to your data, but this is the easiest.
-        </Translate>
-      </Admonition>
       <p>
-        <Translate
-          id="importguide.stepone.web.description"
-          values={{
-            endsong: <code>endsong.json</code>,
-          }}
-        >
+        <Translate id="importguide.stepone.web.description">
           {
-            'In order to request the {endsong} files, simply press the correct buttons on the Spotify website.'
+            'In order to request the extended streaming history files, simply press the correct buttons on the Spotify website.'
           }
         </Translate>
       </p>

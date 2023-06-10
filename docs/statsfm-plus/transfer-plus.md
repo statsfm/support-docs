@@ -17,4 +17,4 @@ In order to validate you own both accounts, you need to follow [this Spotify pro
 
 ### Can you transfer my stats too?
 
-Unfortunately, it's not possible to transfer your stats right now. If you want to merge your stats from your old account into your new one, your only option is to [request your endsong files from your old account](../import/spotify-import) and upload them into your new account.
+Unfortunately, it's not possible to transfer your stats right now. If you want to merge your stats from your old account into your new one, your only option is to [request your extended streaming history files from your old account](../import/spotify-import) and upload them into your new account.
