@@ -4,7 +4,7 @@ tags: [faq, spotify, endsong, data, files]
 description: Explanation about why the valid may not be present.
 ---
 
-# There are no vaild files present in the files I received
+# There are no valid files present in the files I received
 
 | Type of data                          | Description                                                          | Data preparation time              |
 | ------------------------------------- | -------------------------------------------------------------------- | ---------------------------------- |
